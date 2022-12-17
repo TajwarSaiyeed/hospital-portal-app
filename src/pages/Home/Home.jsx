@@ -3,6 +3,9 @@ import HomeAboutService from "../../components/HomeAboutService/HomeAboutService
 import Subscribe from "../shared/Subscribe/Subscribe";
 import GrowHospital from "../../components/GrowHospital/GrowHospital";
 import homeImage from "../../assets/home.png";
+import ProtectYoutHealth from "./ProtectYoutHealth";
+import HospitalSaas from "./HospitalSaas";
+import HomeButton from "./HomeButton";
 
 const Home = () => {
   return (
@@ -19,17 +22,12 @@ const Home = () => {
             <br />
             Opportunities.
           </p>
-          <div className="flex gap-6">
-            <button className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white ">
-              Signup
-            </button>
-            <button className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white ">
-              Contact Us
-            </button>
-          </div>
+          <HomeButton />
           <p className="text-[#0011AD] text-2xl mt-5">Call : +912345678900</p>
         </div>
       </div>
+      <ProtectYoutHealth />
+      <HospitalSaas />
       <GrowHospital />
       <HomeAboutService />
       <Subscribe />
