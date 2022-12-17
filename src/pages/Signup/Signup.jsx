@@ -36,6 +36,7 @@ const Signup = () => {
 
     if (password !== cpassword) {
       setErr("Password and Confirm Password must be same");
+      setSmallLoading(false);
       return;
     }
     const userObj = {

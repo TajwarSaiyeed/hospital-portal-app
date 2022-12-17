@@ -93,7 +93,7 @@ const Navbar = () => {
       <div className="hidden lg:navbar-end lg:flex">
         <ul className="menu menu-horizontal p-0 gap-1">{menuItems}</ul>
       </div>
-      {user && (
+      {user && user?.email && (
         <div className="hidden lg:block dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
@@ -109,20 +109,12 @@ const Navbar = () => {
                 Profile
               </Link>
             </li>
-            {!isAdmin && (
-              <li>
-                <Link to="/profile" className="mb-2 justify-between">
-                  Dashboard
-                </Link>
-              </li>
-            )}
-            {isAdmin && (
-              <li>
-                <Link to="/profile" className="mb-2 justify-between">
-                  Admin Dashboard
-                </Link>
-              </li>
-            )}
+
+            <li>
+              <Link to="/profile" className="mb-2 justify-between">
+                Dashboard
+              </Link>
+            </li>
 
             <li>
               <button onClick={signout} className="btn btn-error">
