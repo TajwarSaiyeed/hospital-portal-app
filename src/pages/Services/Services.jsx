@@ -7,7 +7,7 @@ import GrowHospital from "../../components/GrowHospital/GrowHospital";
 const Services = () => {
   return (
     <div>
-      <div className="h-96 w-full">
+      <div className="min-h-96 w-full">
         <img className="w-full object-cover h-full" src={serviceImage} alt="" />
       </div>
       <GrowHospital />

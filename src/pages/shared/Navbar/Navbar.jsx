@@ -1,48 +1,65 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
-
-const menuitems = (
-  <>
-    <li>
-      <Link className="text-md" to="/">
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/pricing">
-        Pricing
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/services">
-        Services
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/hospitals">
-        Hospitals
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/contact">
-        Contact
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/aboutus">
-        About
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md  bg-[#00B2FE] text-white" to="/login">
-        Login
-      </Link>
-    </li>
-  </>
-);
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const signout = () => {
+    logOut()
+      .then(() => {})
+      .catch((err) => console.error(err));
+  };
+
+  const menuitems = (
+    <>
+      <li>
+        <Link className="text-md" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="text-md" to="/pricing">
+          Pricing
+        </Link>
+      </li>
+      <li>
+        <Link className="text-md" to="/services">
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link className="text-md" to="/hospitals">
+          Hospitals
+        </Link>
+      </li>
+      <li>
+        <Link className="text-md" to="/contact">
+          Contact
+        </Link>
+      </li>
+      <li>
+        <Link className="text-md" to="/aboutus">
+          About
+        </Link>
+      </li>
+      {!user?.email ? (
+        <li>
+          <Link className="text-md  bg-[#00B2FE] text-white" to="/login">
+            Login
+          </Link>
+        </li>
+      ) : (
+        <button
+          onClick={signout}
+          className="text-md text-red-500 font-black uppercase"
+        >
+          Logout
+        </button>
+      )}
+    </>
+  );
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">

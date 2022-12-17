@@ -28,7 +28,8 @@ const HospitalSaas = () => {
             <p className="flex text-lg font-medium">
               <input
                 type="checkbox"
-                checked="checked"
+                defaultChecked
+                readOnly
                 className="checkbox checkbox-info mr-2"
               />
               Fully Secure
@@ -37,7 +38,8 @@ const HospitalSaas = () => {
             <p className="flex text-lg font-medium">
               <input
                 type="checkbox"
-                checked="checked"
+                defaultChecked
+                readOnly
                 className="checkbox checkbox-info mr-2"
               />
               Easy To Use
@@ -47,7 +49,8 @@ const HospitalSaas = () => {
             <p className="flex text-lg font-medium">
               <input
                 type="checkbox"
-                checked="checked"
+                defaultChecked
+                readOnly
                 className="checkbox checkbox-info mr-2"
               />
               Regular Updates
@@ -56,7 +59,8 @@ const HospitalSaas = () => {
             <p className="flex text-lg font-medium">
               <input
                 type="checkbox"
-                checked="checked"
+                defaultChecked
+                readOnly
                 className="checkbox checkbox-info mr-2"
               />
               24*7 Support

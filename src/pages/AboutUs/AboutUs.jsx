@@ -9,7 +9,7 @@ import HomeAboutService from "../../components/HomeAboutService/HomeAboutService
 const AboutUs = () => {
   return (
     <div>
-      <div className="h-96 w-full">
+      <div className="min-h-96 w-full">
         <img className="w-full object-cover h-full" src={aboutImage} alt="" />
       </div>
       <HowItWorks />
