@@ -1,7 +1,7 @@
 import React from "react";
 
-const AboutSectionTwo = () => {
-  const aboutSectionTwo = [
+const HomeAboutService = () => {
+  const homeAboutService = [
     {
       id: 1,
       num: 234,
@@ -30,12 +30,12 @@ const AboutSectionTwo = () => {
 
   return (
     <div className="grid grid-cols-4 p-5 h-32 my-5 bg-slate-100">
-      {aboutSectionTwo.map((about) => (
-        <div key={about.id} className="flex items-center gap-2">
-          <img src={about.pic} alt="" />
+      {homeAboutService.map((HAS) => (
+        <div key={HAS.id} className="flex items-center gap-2">
+          <img src={HAS.pic} alt="" />
           <div className="flex flex-col">
-            <span className="text-xl">{about.num}</span>
-            <span className="text-xl">{about.text}</span>
+            <span className="text-xl">{HAS.num}</span>
+            <span className="text-xl">{HAS.text}</span>
           </div>
         </div>
       ))}
@@ -43,4 +43,4 @@ const AboutSectionTwo = () => {
   );
 };
 
-export default AboutSectionTwo;
+export default HomeAboutService;

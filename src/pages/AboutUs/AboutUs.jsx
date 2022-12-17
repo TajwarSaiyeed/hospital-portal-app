@@ -3,7 +3,8 @@ import aboutImage from "../../assets/about.png";
 import HowItWorks from "./HowItWorks";
 import Subscribe from "../shared/Subscribe/Subscribe";
 import AboutSectionOne from "./AboutSectionOne";
-import AboutSectionTwo from "./AboutSectionTwo";
+import AboutSectionThree from "./AboutSectionThree";
+import HomeAboutService from "../../components/HomeAboutService/HomeAboutService";
 
 const AboutUs = () => {
   return (
@@ -13,7 +14,8 @@ const AboutUs = () => {
       </div>
       <HowItWorks />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      <HomeAboutService />
+      <AboutSectionThree />
       <Subscribe />
     </div>
   );
