@@ -8,6 +8,8 @@ import Hospitals from "../pages/Hospitals/Hospitals";
 import Services from "../pages/Services/Services";
 import Contact from "../pages/Contact/Contact";
 import Pricing from "../pages/Pricing/Pricing";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import PrivateRoute from "./PrivateRoute";
 
 export const routes = createBrowserRouter([
   {
@@ -45,6 +47,14 @@ export const routes = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        ),
       },
     ],
   },
