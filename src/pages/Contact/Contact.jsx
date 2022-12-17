@@ -2,6 +2,7 @@ import React from "react";
 import contactImage from "../../assets/contact.png";
 import { FaLocationArrow, FaPhone } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
+import Subscribe from "../shared/Subscribe/Subscribe";
 
 const Contact = () => {
   return (
@@ -125,6 +126,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Subscribe />
     </div>
   );
 };

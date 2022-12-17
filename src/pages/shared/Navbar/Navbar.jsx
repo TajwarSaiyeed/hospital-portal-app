@@ -15,16 +15,6 @@ const menuitems = (
       </Link>
     </li>
     <li>
-      <Link className="text-md" to="/contact">
-        Contact
-      </Link>
-    </li>
-    <li>
-      <Link className="text-md" to="/aboutus">
-        About
-      </Link>
-    </li>
-    <li>
       <Link className="text-md" to="/services">
         Services
       </Link>
@@ -32,6 +22,16 @@ const menuitems = (
     <li>
       <Link className="text-md" to="/hospitals">
         Hospitals
+      </Link>
+    </li>
+    <li>
+      <Link className="text-md" to="/contact">
+        Contact
+      </Link>
+    </li>
+    <li>
+      <Link className="text-md" to="/aboutus">
+        About
       </Link>
     </li>
     <li>
