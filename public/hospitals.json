@@ -1,6 +1,5 @@
 [
     {
-        "hospital_id": "1",
         "hospital_org_id": "1",
         "ein": "630307951",
         "name": "Mizell Memorial Hospital",
@@ -19,7 +18,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "2",
         "hospital_org_id": "2",
         "ein": "630578923",
         "name": "St Vincents East",
@@ -37,7 +35,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "3",
         "hospital_org_id": "3",
         "ein": "630312913",
         "name": "Shelby Baptist Medical Center",
@@ -55,7 +52,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "4",
         "hospital_org_id": "4",
         "ein": "630459034",
         "name": "Callahan Eye Foundation Hosp",
@@ -73,7 +69,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "5",
         "hospital_org_id": "5",
         "ein": "581973570",
         "name": "Cherokee Medical Center",
@@ -92,7 +87,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "6",
         "hospital_org_id": "6",
         "ein": "636001820",
         "name": "Jackson Hospital And Clinic Inc",
@@ -110,7 +104,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "7",
         "hospital_org_id": "7",
         "ein": "630288852",
         "name": "George H Lanier Memorial Hospital",
@@ -129,7 +122,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "8",
         "hospital_org_id": "8",
         "ein": "475348597",
         "name": "Tanner Medical Center-East Alabama",
@@ -148,7 +140,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "9",
         "hospital_org_id": "9",
         "ein": "630047680",
         "name": "Community Hospital Inc",
@@ -166,7 +157,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "10",
         "hospital_org_id": "10",
         "ein": "631058174",
         "name": "Cullman Regional",
@@ -185,7 +175,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "11",
         "hospital_org_id": "11",
         "ein": "636000090",
         "name": "Stringfellow Memorial Hospital",
@@ -203,7 +192,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "12",
         "hospital_org_id": "12",
         "ein": "640926753",
         "name": "Marion Regional Medical Center",
@@ -222,7 +210,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "13",
         "hospital_org_id": "13",
         "ein": "630909073",
         "name": "St Vincents Blount",
@@ -240,7 +227,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "14",
         "hospital_org_id": "14",
         "ein": "630288864",
         "name": "St Vincents Birmingham",
@@ -258,7 +244,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "15",
         "hospital_org_id": "15",
         "ein": "630385130",
         "name": "Russell Medical Center",
@@ -277,7 +262,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "16",
         "hospital_org_id": "11",
         "ein": "636000090",
         "name": "Northeast Alabama Regional Med Ctr",
@@ -295,7 +279,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "17",
         "hospital_org_id": "16",
         "ein": "320453405",
         "name": "Northwest Medical Center",
@@ -314,7 +297,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "18",
         "hospital_org_id": "3",
         "ein": "630312913",
         "name": "Walker Baptist Medical Center",
@@ -332,7 +314,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "19",
         "hospital_org_id": "17",
         "ein": "630288861",
         "name": "Providence Hospital",
@@ -351,7 +332,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "20",
         "hospital_org_id": "18",
         "ein": "630891904",
         "name": "Thomas Hospital",
@@ -369,7 +349,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "21",
         "hospital_org_id": "3",
         "ein": "630312913",
         "name": "Citizens Baptist Medical Center",
@@ -388,7 +367,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "22",
         "hospital_org_id": "3",
         "ein": "630312913",
         "name": "Princeton Baptist Medical Center",
@@ -407,7 +385,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "23",
         "hospital_org_id": "19",
         "ein": "630920915",
         "name": "Pickens County Medical Center",
@@ -425,7 +402,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "24",
         "hospital_org_id": "20",
         "ein": "630288856",
         "name": "Mobile Infirmary Medical Center",
@@ -443,7 +419,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "25",
         "hospital_org_id": "21",
         "ein": "472367677",
         "name": "Lakeland Community Hospital",
@@ -463,7 +438,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "26",
         "hospital_org_id": "18",
         "ein": "630891904",
         "name": "North Baldwin Infirmary",
@@ -481,7 +455,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "27",
         "hospital_org_id": "22",
         "ein": "630931008",
         "name": "St Vincents St Clair",
@@ -499,7 +472,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "28",
         "hospital_org_id": "3",
         "ein": "630312913",
         "name": "Brookwood Baptist Medical Center",
@@ -517,7 +489,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "29",
         "hospital_org_id": "11",
         "ein": "636000090",
         "name": "Jacksonville Medical Center",
@@ -535,7 +506,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "30",
         "hospital_org_id": "23",
         "ein": "203713023",
         "name": "Infirmary West",
@@ -553,7 +523,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "31",
         "hospital_org_id": "24",
         "ein": "472378825",
         "name": "Russellville Hospital",
@@ -572,7 +541,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "32",
         "hospital_org_id": "25",
         "ein": "631143638",
         "name": "Atmore Community Hospital",
@@ -591,7 +559,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "33",
         "hospital_org_id": "22",
         "ein": "630931008",
         "name": "St Vincents Chilton",
@@ -610,7 +577,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "34",
         "hospital_org_id": "26",
         "ein": "640655993",
         "name": "Choctaw General Hospital",
@@ -629,7 +595,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "35",
         "hospital_org_id": "13",
         "ein": "630909073",
         "name": "St Vincents Blount",
@@ -647,7 +612,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "36",
         "hospital_org_id": "8",
         "ein": "475348597",
         "name": "Tanner Medical Center Alabama Inc",
@@ -666,7 +630,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "37",
         "hospital_org_id": "27",
         "ein": "630307306",
         "name": "The Childrens Hospital Of Alabama",
@@ -685,7 +648,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "38",
         "hospital_org_id": "28",
         "ein": "510216586",
         "name": "Providence Alaska Medical Center",
@@ -704,7 +666,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "39",
         "hospital_org_id": "29",
         "ein": "920019395",
         "name": "Mat-Su Regional Med Ctr",
@@ -722,7 +683,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "40",
         "hospital_org_id": "31",
         "ein": "813021580",
         "name": "Fairbanks Memorial",
@@ -740,7 +700,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "41",
         "hospital_org_id": "32",
         "ein": "920077523",
         "name": "Central Peninsula General Hospital",
@@ -759,7 +718,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "42",
         "hospital_org_id": "28",
         "ein": "510216586",
         "name": "Providence Valdez Medical Center",
@@ -778,7 +736,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "43",
         "hospital_org_id": "28",
         "ein": "510216586",
         "name": "Providence Seward Medical & Care Cen",
@@ -797,7 +754,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "44",
         "hospital_org_id": "33",
         "ein": "926001607",
         "name": "Petersburg Medical Center",
@@ -816,7 +772,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "45",
         "hospital_org_id": "28",
         "ein": "510216586",
         "name": "Prov Kodiak Island Medical Center",
@@ -836,7 +791,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "46",
         "hospital_org_id": "34",
         "ein": "920041461",
         "name": "Maniilaq Health Center",
@@ -855,7 +809,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "47",
         "hospital_org_id": "35",
         "ein": "910939479",
         "name": "Ketchikan Medical Center",
@@ -875,7 +828,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "48",
         "hospital_org_id": "36",
         "ein": "920037099",
         "name": "South Peninsula Hospital",
@@ -894,7 +846,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "49",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner University Medical Center Phx",
@@ -912,7 +863,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "50",
         "hospital_org_id": "37",
         "ein": "860137567",
         "name": "Tucson Medical Center",
@@ -930,7 +880,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "51",
         "hospital_org_id": "38",
         "ein": "860100882",
         "name": "Verde Valley Medical Center",
@@ -948,7 +897,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "52",
         "hospital_org_id": "39",
         "ein": "860455920",
         "name": "Carondelet St Marys Hospital",
@@ -966,7 +914,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "53",
         "hospital_org_id": "39",
         "ein": "860455920",
         "name": "Carondelet St Josephs Hospital",
@@ -984,7 +931,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "54",
         "hospital_org_id": "40",
         "ein": "860098923",
         "name": "Yavapai Regional Medical Center",
@@ -1002,7 +948,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "55",
         "hospital_org_id": "41",
         "ein": "866007596",
         "name": "Yuma Regional Medical Center",
@@ -1020,7 +965,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "56",
         "hospital_org_id": "43",
         "ein": "860181654",
         "name": "John C Lincoln Medical Center",
@@ -1038,7 +982,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "57",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Casa Grande Medical Center",
@@ -1056,7 +999,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "58",
         "hospital_org_id": "45",
         "ein": "860110232",
         "name": "Flagstaff Medical Center",
@@ -1074,7 +1016,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "59",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "St Josephs Hospital & Medical Ctr",
@@ -1093,7 +1034,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "60",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Payson Medical Center",
@@ -1112,7 +1052,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "61",
         "hospital_org_id": "47",
         "ein": "815009488",
         "name": "Chandler Regional Medical Center",
@@ -1130,7 +1069,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "62",
         "hospital_org_id": "43",
         "ein": "860181654",
         "name": "Honorhealth Scottsdale Osborn Med Ct",
@@ -1148,7 +1086,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "63",
         "hospital_org_id": "48",
         "ein": "860186064",
         "name": "Sierra Vista Regional Health Center Inc",
@@ -1166,7 +1103,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "64",
         "hospital_org_id": "49",
         "ein": "942916102",
         "name": "Kingman Regional Medical Center",
@@ -1184,7 +1120,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "65",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Boswell Medical Center",
@@ -1202,7 +1137,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "66",
         "hospital_org_id": "50",
         "ein": "860320447",
         "name": "Summit Healthcare",
@@ -1221,7 +1155,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "67",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner University Med Center Tucson",
@@ -1239,7 +1172,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "68",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Desert Medical Center",
@@ -1257,7 +1189,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "69",
         "hospital_org_id": "52",
         "ein": "860260959",
         "name": "La Paz Regional Hospital",
@@ -1276,7 +1207,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "70",
         "hospital_org_id": "53",
         "ein": "237094247",
         "name": "Mt Graham Regional Medical Center",
@@ -1295,7 +1225,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "71",
         "hospital_org_id": "54",
         "ein": "043651340",
         "name": "Tuba City Reg Health Care Corp",
@@ -1313,7 +1242,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "72",
         "hospital_org_id": "43",
         "ein": "860181654",
         "name": "Honorhealth Scottsdale Shea Med Ctr",
@@ -1331,7 +1259,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "73",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Baywood Medical Center",
@@ -1349,7 +1276,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "74",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Thunderbird Medical Center",
@@ -1367,7 +1293,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "75",
         "hospital_org_id": "43",
         "ein": "860181654",
         "name": "Honorhealth Deer Valley Med Center",
@@ -1385,7 +1310,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "76",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Del E Webb Medical Center",
@@ -1403,7 +1327,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "77",
         "hospital_org_id": "55",
         "ein": "561943271",
         "name": "Carondelet Heart And Vascular Instit",
@@ -1422,7 +1345,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "78",
         "hospital_org_id": "57",
         "ein": "383952644",
         "name": "Mayo Clinic Hospital",
@@ -1440,7 +1362,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "79",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Heart Hospital",
@@ -1458,7 +1379,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "80",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner University Med Center South",
@@ -1476,7 +1396,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "81",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "Arizona Orthopedic Surgical Hospital",
@@ -1494,7 +1413,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "82",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Estrella Medical Center",
@@ -1512,7 +1430,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "83",
         "hospital_org_id": "40",
         "ein": "860098923",
         "name": "Yavapai Regional Medical Center-East Campus",
@@ -1530,7 +1447,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "84",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "Mercy Gilbert Medical Center",
@@ -1549,7 +1465,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "85",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Gateway Medical Center",
@@ -1567,7 +1482,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "86",
         "hospital_org_id": "43",
         "ein": "860181654",
         "name": "Honorhealth Scottdale Thompson Peak",
@@ -1585,7 +1499,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "87",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Ironwood Medical Center",
@@ -1603,7 +1516,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "88",
         "hospital_org_id": "47",
         "ein": "815009488",
         "name": "Oasis Hospital",
@@ -1621,7 +1533,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "89",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Goldfield Medical Center",
@@ -1639,7 +1550,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "90",
         "hospital_org_id": "47",
         "ein": "815009488",
         "name": "Arizona General Hospital",
@@ -1657,7 +1567,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "91",
         "hospital_org_id": "47",
         "ein": "815009488",
         "name": "Arizona General Hospital",
@@ -1675,7 +1584,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "92",
         "hospital_org_id": "59",
         "ein": "860096775",
         "name": "Wickenburg Community Hospital",
@@ -1693,7 +1601,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "93",
         "hospital_org_id": "60",
         "ein": "866007695",
         "name": "Benson Hospital",
@@ -1711,7 +1618,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "94",
         "hospital_org_id": "61",
         "ein": "860208451",
         "name": "Northern Cochise Community Hospital",
@@ -1729,7 +1635,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "95",
         "hospital_org_id": "62",
         "ein": "860983474",
         "name": "Southeast Arizona Medical Center",
@@ -1747,7 +1652,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "96",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Page Hospital",
@@ -1765,7 +1669,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "97",
         "hospital_org_id": "63",
         "ein": "237314364",
         "name": "Sage Memorial Hospital",
@@ -1784,7 +1687,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "98",
         "hospital_org_id": "64",
         "ein": "860107344",
         "name": "Winslow Memorial Hospital",
@@ -1803,7 +1705,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "99",
         "hospital_org_id": "65",
         "ein": "860334996",
         "name": "Copper Queen Comm Hosp",
@@ -1821,7 +1722,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "100",
         "hospital_org_id": "66",
         "ein": "860575938",
         "name": "Holy Cross Hospital",
@@ -1840,7 +1740,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "101",
         "hospital_org_id": "67",
         "ein": "860732836",
         "name": "Cobre Valley Reg Medical Center",
@@ -1859,7 +1758,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "102",
         "hospital_org_id": "68",
         "ein": "860171900",
         "name": "White Mountain Regional Hospital",
@@ -1878,7 +1776,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "103",
         "hospital_org_id": "52",
         "ein": "860260959",
         "name": "La Paz Regional Hospital",
@@ -1897,7 +1794,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "104",
         "hospital_org_id": "30",
         "ein": "450233470",
         "name": "Banner Payson Medical Center",
@@ -1916,7 +1812,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "105",
         "hospital_org_id": "69",
         "ein": "860892673",
         "name": "Hacienda De Los Ninos",
@@ -1935,7 +1830,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "106",
         "hospital_org_id": "70",
         "ein": "860422559",
         "name": "Phoenix Childrens Hospital",
@@ -1954,7 +1848,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "107",
         "hospital_org_id": "71",
         "ein": "473035370",
         "name": "Hacienda Childrens Hospital Inc",
@@ -1973,7 +1866,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "108",
         "hospital_org_id": "72",
         "ein": "710403278",
         "name": "Johnson Regional Medical Center",
@@ -1992,7 +1884,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "109",
         "hospital_org_id": "73",
         "ein": "710664687",
         "name": "Washington Regional Medical Center",
@@ -2010,7 +1901,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "110",
         "hospital_org_id": "74",
         "ein": "710236917",
         "name": "St Vincent Infirmary Medical Center",
@@ -2028,7 +1918,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "111",
         "hospital_org_id": "75",
         "ein": "710294390",
         "name": "Mercy Medical Center",
@@ -2047,7 +1936,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "112",
         "hospital_org_id": "76",
         "ein": "716044543",
         "name": "Chambers Memorial Hospital",
@@ -2066,7 +1954,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "113",
         "hospital_org_id": "77",
         "ein": "710772737",
         "name": "White County Medical Center",
@@ -2085,7 +1972,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "114",
         "hospital_org_id": "78",
         "ein": "710787860",
         "name": "North Arkansas Regional Medical Ctr",
@@ -2104,7 +1990,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "115",
         "hospital_org_id": "79",
         "ein": "825426152",
         "name": "Baptist Health Medical Center - Vb",
@@ -2122,7 +2007,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "116",
         "hospital_org_id": "80",
         "ein": "710290019",
         "name": "St Bernards Medical Center",
@@ -2140,7 +2024,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "117",
         "hospital_org_id": "81",
         "ein": "710236913",
         "name": "St Vincent Hot Springs",
@@ -2159,7 +2042,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "118",
         "hospital_org_id": "82",
         "ein": "710561765",
         "name": "Baxter Regional Medical Center",
@@ -2178,7 +2060,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "119",
         "hospital_org_id": "83",
         "ein": "710249735",
         "name": "Conway Regional Medical Center Inc",
@@ -2196,7 +2077,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "120",
         "hospital_org_id": "84",
         "ein": "710236856",
         "name": "Baptist Health Medical Center- Nlr",
@@ -2214,7 +2094,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "121",
         "hospital_org_id": "85",
         "ein": "710230218",
         "name": "Arkansas Methodist Medical Center",
@@ -2233,7 +2112,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "122",
         "hospital_org_id": "86",
         "ein": "710236932",
         "name": "Crittenden Regional Hospital",
@@ -2251,7 +2129,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "123",
         "hospital_org_id": "87",
         "ein": "273970823",
         "name": "Five Rivers Medical Center",
@@ -2270,7 +2147,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "124",
         "hospital_org_id": "88",
         "ein": "710766341",
         "name": "Ouachita County Medical Center",
@@ -2289,7 +2165,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "125",
         "hospital_org_id": "89",
         "ein": "352414105",
         "name": "Drew Memorial Hospital Inc",
@@ -2308,7 +2183,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "126",
         "hospital_org_id": "79",
         "ein": "825426152",
         "name": "Baptist Health Medical Center - Fs",
@@ -2326,7 +2200,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "127",
         "hospital_org_id": "90",
         "ein": "710240352",
         "name": "Mercy Hospital Fort Smith",
@@ -2344,7 +2217,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "128",
         "hospital_org_id": "91",
         "ein": "710329353",
         "name": "Jefferson Regional Medical Center",
@@ -2362,7 +2234,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "129",
         "hospital_org_id": "92",
         "ein": "611570855",
         "name": "Bhmc- Stuttgart",
@@ -2381,7 +2252,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "130",
         "hospital_org_id": "93",
         "ein": "710769555",
         "name": "North Metro Medical Center",
@@ -2399,7 +2269,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "131",
         "hospital_org_id": "84",
         "ein": "710236856",
         "name": "Baptist Health Medical Center - Hsc",
@@ -2418,7 +2287,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "132",
         "hospital_org_id": "77",
         "ein": "710772737",
         "name": "Unity Health Harris Medical Center",
@@ -2437,7 +2305,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "133",
         "hospital_org_id": "95",
         "ein": "710772959",
         "name": "Saline Memorial Hospital",
@@ -2455,7 +2322,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "134",
         "hospital_org_id": "84",
         "ein": "710236856",
         "name": "Baptist Health Medical Center - Lr",
@@ -2473,7 +2339,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "135",
         "hospital_org_id": "96",
         "ein": "261214372",
         "name": "Nea Baptist Memorial Hospital",
@@ -2491,7 +2356,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "136",
         "hospital_org_id": "97",
         "ein": "710411459",
         "name": "White River Medical Center",
@@ -2510,7 +2374,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "137",
         "hospital_org_id": "98",
         "ein": "710246565",
         "name": "Leo N Levi Memorial Hospital",
@@ -2528,7 +2391,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "138",
         "hospital_org_id": "74",
         "ein": "710236917",
         "name": "St Vincent North",
@@ -2547,7 +2409,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "139",
         "hospital_org_id": "99",
         "ein": "461629800",
         "name": "Bhmc-Conway",
@@ -2565,7 +2426,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "140",
         "hospital_org_id": "100",
         "ein": "823844150",
         "name": "Bmh-Crittenden",
@@ -2583,7 +2443,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "141",
         "hospital_org_id": "101",
         "ein": "710655753",
         "name": "Mercy Hospital Paris",
@@ -2603,7 +2462,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "142",
         "hospital_org_id": "102",
         "ein": "710689680",
         "name": "Mercy Hospital Ozark",
@@ -2622,7 +2480,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "143",
         "hospital_org_id": "103",
         "ein": "710557895",
         "name": "Mercy Hospital Waldron",
@@ -2641,7 +2498,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "144",
         "hospital_org_id": "104",
         "ein": "710410601",
         "name": "Comm Medical Center Of Calico Rock",
@@ -2660,7 +2516,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "145",
         "hospital_org_id": "105",
         "ein": "710835247",
         "name": "Crossridge Community Hospital",
@@ -2679,7 +2534,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "146",
         "hospital_org_id": "106",
         "ein": "364664248",
         "name": "Mcgehee Hospital",
@@ -2698,7 +2552,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "147",
         "hospital_org_id": "107",
         "ein": "731547175",
         "name": "Lawrence Memorial Hospital",
@@ -2717,7 +2570,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "148",
         "hospital_org_id": "97",
         "ein": "710411459",
         "name": "Stone County Medical Center",
@@ -2736,7 +2588,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "149",
         "hospital_org_id": "108",
         "ein": "710644637",
         "name": "Howard Memorial Hospital",
@@ -2755,7 +2606,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "150",
         "hospital_org_id": "84",
         "ein": "710236856",
         "name": "Bhmc-Heber Springs",
@@ -2774,7 +2624,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "151",
         "hospital_org_id": "109",
         "ein": "710407683",
         "name": "Ozark Health Inc",
@@ -2793,7 +2642,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "152",
         "hospital_org_id": "110",
         "ein": "954896822",
         "name": "Dewitt Hospital & Nursing Home Inc",
@@ -2812,7 +2660,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "153",
         "hospital_org_id": "112",
         "ein": "463851119",
         "name": "Mercy Hospital Booneville",
@@ -2831,7 +2678,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "154",
         "hospital_org_id": "113",
         "ein": "812677745",
         "name": "Little River Memorial",
@@ -2849,7 +2695,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "155",
         "hospital_org_id": "84",
         "ein": "710236856",
         "name": "Baptist Health Med Ctr Arkadelphia",
@@ -2868,7 +2713,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "156",
         "hospital_org_id": "114",
         "ein": "710236870",
         "name": "Ashley County Medical Center",
@@ -2887,7 +2731,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "157",
         "hospital_org_id": "115",
         "ein": "710245507",
         "name": "St Vincent Morrilton",
@@ -2907,7 +2750,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "158",
         "hospital_org_id": "116",
         "ein": "710276839",
         "name": "Delta Memorial Hospital",
@@ -2926,7 +2768,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "159",
         "hospital_org_id": "117",
         "ein": "710797499",
         "name": "Bradley County Medical Center",
@@ -2945,7 +2786,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "160",
         "hospital_org_id": "118",
         "ein": "383807713",
         "name": "Chicot Memorial Medical Center",
@@ -2964,7 +2804,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "161",
         "hospital_org_id": "119",
         "ein": "710759299",
         "name": "Mercy Hospital Berryville",
@@ -2984,7 +2823,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "162",
         "hospital_org_id": "120",
         "ein": "710236857",
         "name": "Arkansas Childrens Hospital",
@@ -3003,7 +2841,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "163",
         "hospital_org_id": "121",
         "ein": "810817660",
         "name": "Arkansas Childrens Northwest",
@@ -3022,7 +2859,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "164",
         "hospital_org_id": "122",
         "ein": "941668344",
         "name": "St Rose Hospital",
@@ -3041,7 +2877,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "165",
         "hospital_org_id": "124",
         "ein": "814791043",
         "name": "St Joseph Hospital - Eureka",
@@ -3060,7 +2895,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "166",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "Mills Peninsula Medical Center",
@@ -3078,7 +2912,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "167",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "California Pacific Medical Ctr-Davies Campus Hosp",
@@ -3096,7 +2929,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "168",
         "hospital_org_id": "124",
         "ein": "814791043",
         "name": "Queen Of The Valley Medical Center",
@@ -3115,7 +2947,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "169",
         "hospital_org_id": "128",
         "ein": "941279779",
         "name": "Adventist Health St Helena",
@@ -3133,7 +2964,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "170",
         "hospital_org_id": "129",
         "ein": "941156621",
         "name": "Sutter Amador Hospital",
@@ -3152,7 +2982,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "171",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "Marian Regional Medical Center, Arroyo Grande",
@@ -3170,7 +2999,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "172",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "Mercy General Hospital",
@@ -3188,7 +3016,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "173",
         "hospital_org_id": "130",
         "ein": "330449527",
         "name": "Grossmont Hospital",
@@ -3206,7 +3033,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "174",
         "hospital_org_id": "131",
         "ein": "941634554",
         "name": "Oroville Hospital",
@@ -3224,7 +3050,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "175",
         "hospital_org_id": "132",
         "ein": "951802779",
         "name": "Bakersfield Memorial Hospital",
@@ -3242,7 +3067,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "176",
         "hospital_org_id": "133",
         "ein": "941603784",
         "name": "Enloe Medical Center",
@@ -3260,7 +3084,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "177",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "St Elizabeth Community Hosptial",
@@ -3280,7 +3103,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "178",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "Summit Medical Center",
@@ -3298,7 +3120,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "179",
         "hospital_org_id": "135",
         "ein": "951683892",
         "name": "Ojai Valley Community Hospital",
@@ -3316,7 +3137,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "180",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "California Pacific Medical Center",
@@ -3334,7 +3154,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "181",
         "hospital_org_id": "136",
         "ein": "330420041",
         "name": "San Gorgonio Memorial",
@@ -3352,7 +3171,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "182",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "Cpmc - Mission Bernal Campus",
@@ -3371,7 +3189,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "183",
         "hospital_org_id": "47",
         "ein": "815009488",
         "name": "Glendale Memorial Hospital & Hlth Ct",
@@ -3389,7 +3206,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "184",
         "hospital_org_id": "137",
         "ein": "941156276",
         "name": "Community Regional Medical Center",
@@ -3407,7 +3223,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "185",
         "hospital_org_id": "138",
         "ein": "951643359",
         "name": "St Joseph Hospital Of Orange",
@@ -3426,7 +3241,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "186",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - South San Francisco",
@@ -3444,7 +3258,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "187",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - Santa Clara",
@@ -3462,7 +3275,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "188",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - Walnut Creek",
@@ -3480,7 +3292,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "189",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - Vallejo",
@@ -3498,7 +3309,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "190",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - Oakland",
@@ -3516,7 +3326,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "191",
         "hospital_org_id": "139",
         "ein": "941105628",
         "name": "Kfh - San Francisco",
@@ -3534,7 +3343,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "192",
         "hospital_org_id": "140",
         "ein": "951684089",
         "name": "Scripps Mercy Hospital",
@@ -3552,7 +3360,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "193",
         "hospital_org_id": "141",
         "ein": "510216589",
         "name": "Providence Lttl Co Mary Mc San Pedro",
@@ -3570,7 +3377,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "194",
         "hospital_org_id": "46",
         "ein": "941196203",
         "name": "St Johns Regional Medical Center",
@@ -3588,7 +3394,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "195",
         "hospital_org_id": "142",
         "ein": "465322209",
         "name": "St Josephs Medical Center",
@@ -3606,7 +3411,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "196",
         "hospital_org_id": "126",
         "ein": "940562680",
         "name": "Alta Bates - Herrick Hospital",
@@ -3624,7 +3428,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "197",
         "hospital_org_id": "143",
         "ein": "951643373",
         "name": "Community Hospital Of San Bernardino",
@@ -3642,7 +3445,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "198",
         "hospital_org_id": "144",
         "ein": "941437713",
         "name": "St Agnes Medical Center",
@@ -3661,7 +3463,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "199",
         "hospital_org_id": "145",
         "ein": "951183919",
         "name": "San Antonio Regional Hospital",
@@ -3679,7 +3480,6 @@
         "updated_dt": "October 7, 2022"
     },
     {
-        "hospital_id": "200",
         "hospital_org_id": "146",
         "ein": "953782169",
         "name": "Sharp Memorial Hospital",

@@ -30,6 +30,11 @@ const menuitems = (
       </Link>
     </li>
     <li>
+      <Link className="text-md" to="/hospitals">
+        Hospitals
+      </Link>
+    </li>
+    <li>
       <Link className="text-md  bg-[#00B2FE] text-white" to="/login">
         Login
       </Link>
