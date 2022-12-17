@@ -9,12 +9,14 @@ import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
 import useToken from "../../hooks/useToken";
 import Loading from "../../components/Loading/Loading";
+import SmallLoading from "../../components/SmallLoading/SmallLoading";
 
 const Signup = () => {
   const [err, setErr] = useState(null);
   const { user, loading, createUser, updateUser } = useContext(AuthContext);
   const [createdUserEmail, setCreatedUserEmail] = useState("");
   const [token] = useToken(createdUserEmail);
+  const [smallLoading, setSmallLoading] = useState(false);
   const location = useLocation();
   const {
     register,
@@ -28,6 +30,7 @@ const Signup = () => {
   }
 
   const handleCreateUser = (data) => {
+    setSmallLoading(true);
     setErr(null);
     const { name, email, password, cpassword, phone } = data;
 
@@ -46,16 +49,19 @@ const Signup = () => {
             setErr(null);
             saveUser(name, email, phone);
             toast.success("SignUp Successfull");
+            setSmallLoading(false);
           })
           .catch((err) => {
             const error = err.message.split("/")[1].split(").")[0];
             setErr(error);
+            setSmallLoading(false);
           });
         setErr(null);
       })
       .catch((err) => {
         const error = err.message.split("/")[1].split(").")[0];
         setErr(error);
+        setSmallLoading(false);
       });
   };
 
@@ -209,11 +215,12 @@ const Signup = () => {
             )}
           </div>
           <div className="form-control w-full">
-            <input
+            <button
               type="submit"
-              value="Sign Up"
               className="btn bg-[#00B2FE] hover:bg-[#0e6c94] border-none mt-4"
-            />
+            >
+              {smallLoading ? <SmallLoading /> : "Sign Up"}
+            </button>
           </div>
           {err && <p>{err}</p>}
         </form>
@@ -223,8 +230,8 @@ const Signup = () => {
             Login
           </Link>
         </p>
-        <Subscribe />
       </div>
+      <Subscribe />
     </div>
   );
 };

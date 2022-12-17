@@ -9,7 +9,7 @@ const Loading = () => {
         height="180"
         width="180"
         ariaLabel="dna-loading"
-        // wrapperStyle={{}}
+        wrapperStyle={{}}
         wrapperClass="dna-wrapper"
       />
     </div>

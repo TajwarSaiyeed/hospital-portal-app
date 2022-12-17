@@ -38,7 +38,7 @@ async function run() {
     const usersCollection = client.db("hospitalDB").collection("users");
 
     // get all hospitals
-    app.get("/hospitals", async (req, res) => {
+    app.get("/hospitals", verifyJWT, async (req, res) => {
       const page = req.query.page;
       const mylimit = req.query.limit;
       const query = {};
@@ -79,6 +79,14 @@ async function run() {
         options
       );
       res.send(result);
+    });
+
+    // check admin
+    app.get("/users/admin/:email", verifyJWT, async (req, res) => {
+      const email = req.params.email;
+      const query = { email: email };
+      const user = await usersCollection.findOne(query);
+      res.send({ isAdmin: user?.role === "admin" });
     });
   } finally {
   }

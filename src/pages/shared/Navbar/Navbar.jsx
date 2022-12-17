@@ -2,60 +2,55 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [isAdmin] = useAdmin(user?.email);
   const signout = () => {
     logOut()
       .then(() => {})
       .catch((err) => console.error(err));
   };
 
-  const menuitems = (
+  const menuItems = (
     <>
       <li>
-        <Link className="text-md" to="/">
+        <Link className="text-sm font-semibold" to="/">
           Home
         </Link>
       </li>
       <li>
-        <Link className="text-md" to="/pricing">
+        <Link className="text-sm font-semibold" to="/pricing">
           Pricing
         </Link>
       </li>
       <li>
-        <Link className="text-md" to="/services">
+        <Link className="text-sm font-semibold" to="/services">
           Services
         </Link>
       </li>
       <li>
-        <Link className="text-md" to="/hospitals">
+        <Link className="text-sm font-semibold" to="/hospitals">
           Hospitals
         </Link>
       </li>
       <li>
-        <Link className="text-md" to="/contact">
+        <Link className="text-sm font-semibold" to="/contact">
           Contact
         </Link>
       </li>
       <li>
-        <Link className="text-md" to="/aboutus">
+        <Link className="text-sm font-semibold" to="/aboutus">
           About
         </Link>
       </li>
-      {!user?.email ? (
+      {!user?.email && (
         <li>
-          <Link className="text-md  bg-[#00B2FE] text-white" to="/login">
+          <Link className="bg-[#00B2FE] text-white" to="/login">
             Login
           </Link>
         </li>
-      ) : (
-        <button
-          onClick={signout}
-          className="text-md text-red-500 font-black uppercase"
-        >
-          Logout
-        </button>
       )}
     </>
   );
@@ -81,19 +76,86 @@ const Navbar = () => {
             </svg>
           </label>
           <ul
+            tabIndex={1}
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            {menuItems}
+          </ul>
+        </div>
+        <Link to="/" className={`flex btn btn-ghost gap-3 normal-case text-xl`}>
+          <div className="avatar">
+            <div className="w-10 rounded-full">
+              <img src={logo} alt="" />
+            </div>
+          </div>
+        </Link>
+      </div>
+      <div className="hidden lg:navbar-end lg:flex">
+        <ul className="menu menu-horizontal p-0 gap-1">{menuItems}</ul>
+      </div>
+      {user && (
+        <div className="hidden lg:block dropdown dropdown-end">
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <img src={user?.photoURL} alt="" />
+            </div>
+          </label>
+          <ul
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            {menuitems}
+            <li>
+              <Link to="/profile" className="mb-2 justify-between">
+                Profile
+              </Link>
+            </li>
+            {!isAdmin && (
+              <li>
+                <Link to="/profile" className="mb-2 justify-between">
+                  Dashboard
+                </Link>
+              </li>
+            )}
+            {isAdmin && (
+              <li>
+                <Link to="/profile" className="mb-2 justify-between">
+                  Admin Dashboard
+                </Link>
+              </li>
+            )}
+
+            <li>
+              <button onClick={signout} className="btn btn-error">
+                Logout
+              </button>
+            </li>
           </ul>
         </div>
-        <Link to="/">
-          <img className="w-[60px] h-[60px]" src={logo} alt="" />
-        </Link>
-      </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{menuitems}</ul>
-      </div>
+      )}
+      {/* {isAdmin && (
+        <div className="navbar-end lg:hidden">
+          <label
+            htmlFor="dashboard-drawer"
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+        </div>
+      )} */}
     </div>
   );
 };
