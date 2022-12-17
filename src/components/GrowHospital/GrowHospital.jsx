@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServicesSectionOne = () => {
+const GrowHospital = () => {
   const grhDetails = [
     {
       id: 1,
@@ -44,25 +44,29 @@ const ServicesSectionOne = () => {
       image: "https://i.ibb.co/j6b0Pw0/call.png",
     },
   ];
-
   return (
     <div className="relative h-[800px] md:h-[800px] lg:min-h-[500px] mt-5 flex justify-center">
-      <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
+      <div className="w-full gap-10 flex flex-col">
+        <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
+        <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
+      </div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
         <h1 className="text-3xl sm:text-6xl font-bold text-[#0011AD] mb-3">
           Grow Your Hospital
         </h1>
         <p>We Help To Grow Your Hospital Beyond Your Expectation</p>
         <div className="grid grid-cols-3 gap-5 justify-items-center">
-          {grhDetails.map((about) => (
+          {grhDetails.map((grhDetail) => (
             <div
-              key={about.id}
+              key={grhDetail.id}
               className="gap-4 h-52 min-w-40 w-full flex flex-col md:w-72 lg:w-80 bg-[#0011AD] shadow-lg text-white p-4 rounded-2xl"
             >
-              <img className="w-10 h-12" src={about.image} alt="" />
+              <img className="w-10 h-12" src={grhDetail.image} alt="" />
               <div>
-                <h2 className="text-2xl font-bold text-white">{about.title}</h2>
-                <p className="text-lg">{about.description}</p>
+                <h2 className="text-2xl font-bold text-white">
+                  {grhDetail.title}
+                </h2>
+                <p className="text-lg">{grhDetail.description}</p>
               </div>
             </div>
           ))}
@@ -72,4 +76,4 @@ const ServicesSectionOne = () => {
   );
 };
 
-export default ServicesSectionOne;
+export default GrowHospital;

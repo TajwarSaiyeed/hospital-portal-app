@@ -1,8 +1,8 @@
 import React from "react";
 import HomeAboutService from "../../components/HomeAboutService/HomeAboutService";
 import Subscribe from "../shared/Subscribe/Subscribe";
-import ServicesSectionOne from "./ServicesSectionOne";
 import serviceImage from "../../assets/services.png";
+import GrowHospital from "../../components/GrowHospital/GrowHospital";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
       <div className="h-96 w-full">
         <img className="w-full object-cover h-full" src={serviceImage} alt="" />
       </div>
-      <ServicesSectionOne />
+      <GrowHospital />
       <HomeAboutService />
       <Subscribe />
     </div>
