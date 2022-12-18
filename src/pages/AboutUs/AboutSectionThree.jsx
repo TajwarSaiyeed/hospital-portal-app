@@ -21,8 +21,8 @@ const AboutSectionThree = () => {
   ];
 
   return (
-    <div className="relative">
-      <img src={about2} alt="" />
+    <div className="relative h-[700px] max-h-[800px] sm:h-[600px]">
+      <img className="w-full h-full object-cover" src={about2} alt="" />
       <div
         style={{
           background: "rgba(0, 178, 254, 0.5)",
@@ -32,10 +32,10 @@ const AboutSectionThree = () => {
       <div className="absolute top-10">
         {aboutSectionThree.map((about) => (
           <div key={about.id}>
-            <h1 className="bg-white text-4xl p-3 w-3/4 rounded-tr-3xl rounded-br-3xl pl-6">
+            <h1 className="bg-white sm:w-3/4 md:text-xl lg:w-3/5 lg:text-2xl font-bold text-sm p-2 md:w-3/4 rounded-tr-3xl rounded-br-3xl pl-6">
               {about.title}
             </h1>
-            <p className="w-1/2 text-xl mt-2 pl-6 p-3 text-white">
+            <p className="w-full sm:w-3/4 text-md sm:text-lg md:text-xl mt-2 pl-6 p-3 text-white">
               {about.body}
             </p>
           </div>
