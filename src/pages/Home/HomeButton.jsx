@@ -5,7 +5,7 @@ import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 const HomeButton = () => {
   const { user } = useContext(AuthContext);
   return (
-    <div className="flex gap-6">
+    <div className="flex flex-col sm:flex-row gap-6">
       {!user?.email && (
         <Link
           to="/signup"

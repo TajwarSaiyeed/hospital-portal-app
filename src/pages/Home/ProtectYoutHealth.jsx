@@ -25,17 +25,17 @@ const ProtectYoutHealth = () => {
     },
   ];
   return (
-    <div className="relative h-[800px] md:h-[800px] lg:h-[400px] mt-5 flex justify-center">
+    <div className="relative h-[1400px] md:h-[800px] lg:h-[500px] mt-5 flex justify-center">
       <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
-        <h1 className="text-3xl sm:text-6xl font-bold text-[#0011AD] mb-3">
+        <h1 className="text-3xl text-center sm:text-6xl font-bold text-[#0011AD] mb-3">
           Protect Your Health
         </h1>
-        <p>
+        <p className="text-center">
           Our medical clinic provides quality care for the entire family while
           maintaining a personable atmosphere best services.
         </p>
-        <div className="grid grid-cols-3 gap-5 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
           {grhDetails.map((grhDetail) => (
             <div
               key={grhDetail.id}
