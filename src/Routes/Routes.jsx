@@ -13,7 +13,6 @@ import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import MyBooking from "../pages/Dashboard/MyBooking";
 import AddHospital from "../pages/Dashboard/AddHospital";
-import AddDoctor from "../pages/Dashboard/AddDoctor";
 import AllUsers from "../pages/Dashboard/AllUsers";
 
 export const routes = createBrowserRouter([
@@ -70,14 +69,6 @@ export const routes = createBrowserRouter([
             element: (
               <AdminRoute>
                 <AddHospital />
-              </AdminRoute>
-            ),
-          },
-          {
-            path: "/dashboard/adddoctor",
-            element: (
-              <AdminRoute>
-                <AddDoctor />
               </AdminRoute>
             ),
           },
