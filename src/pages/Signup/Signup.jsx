@@ -293,7 +293,7 @@ const Signup = () => {
           </div>
 
           <ReCAPTCHA
-            sitekey="6LdjbYsjAAAAABDqBJE2onN8-D_VaWwJvmfZuXoP"
+            sitekey={process.env.REACT_APP_RECAP}
             onChange={onChange}
           />
           <div className="form-control w-full">
