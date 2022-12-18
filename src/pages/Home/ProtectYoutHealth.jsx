@@ -25,7 +25,7 @@ const ProtectYoutHealth = () => {
     },
   ];
   return (
-    <div className="relative h-[1400px] md:h-[800px] lg:h-[500px] mt-5 flex justify-center">
+    <div className="relative h-[1000px] sm:h-[700px] md:h-[800px] lg:h-[500px] mt-5 flex justify-center">
       <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
         <h1 className="text-3xl text-center sm:text-6xl font-bold text-[#0011AD] mb-3">
