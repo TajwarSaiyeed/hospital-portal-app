@@ -14,6 +14,7 @@ import AdminRoute from "./AdminRoute";
 import MyBooking from "../pages/Dashboard/MyBooking";
 import AddHospital from "../pages/Dashboard/AddHospital";
 import AllUsers from "../pages/Dashboard/AllUsers";
+import Payment from "../pages/Dashboard/Payment/Payment";
 
 export const routes = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ export const routes = createBrowserRouter([
           {
             path: "/dashboard",
             element: <MyBooking />,
+          },
+          {
+            path: "/dashboard/payment/:id",
+            element: <Payment />,
           },
           {
             path: "/dashboard/addhospital",

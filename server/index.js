@@ -1,10 +1,11 @@
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 5000;
 const jwt = require("jsonwebtoken");
+const stripe = require("stripe")(process.env.STRIPE_SECRET);
 
 app.use(cors());
 app.use(express.json());
@@ -38,6 +39,7 @@ async function run() {
     const usersCollection = client.db("hospitalDB").collection("users");
     const plansCollection = client.db("hospitalDB").collection("plans");
     const ordersCollection = client.db("hospitalDB").collection("orders");
+    const paymentsCollection = client.db("hospitalDB").collection("payments");
 
     // verify admin
     const verifyAdmin = async (req, res, next) => {
@@ -51,6 +53,42 @@ async function run() {
       }
       next();
     };
+
+    // create payment intent
+    app.post("/create-payment-intent", async (req, res) => {
+      const plan = req.body;
+      const price = plan.price;
+      const amount = price * 100;
+      const paymentIntent = await stripe.paymentIntents.create({
+        currency: "usd",
+        amount: amount,
+        payment_method_types: ["card"],
+      });
+      res.send({
+        clientSecret: paymentIntent.client_secret,
+      });
+    });
+
+    // payments
+    app.post("/payments", verifyJWT, async (req, res) => {
+      const payment = req.body;
+      const result = await paymentsCollection.insertOne(payment);
+      const id = payment.planId;
+      const filter = { _id: ObjectId(id) };
+      const updatedOrderDoc = {
+        $set: {
+          paid: true,
+          transactionId: payment.transactionId,
+        },
+      };
+      // eslint-disable-next-line no-unused-vars
+      const updateOrder = await ordersCollection.updateOne(
+        filter,
+        updatedOrderDoc,
+        { upsert: true }
+      );
+      res.send(result);
+    });
 
     // get all hospitals
     app.get("/hospitals", async (req, res) => {

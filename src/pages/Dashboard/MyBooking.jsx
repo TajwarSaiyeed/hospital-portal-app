@@ -2,14 +2,11 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../components/Loading/Loading";
+import { Link } from "react-router-dom";
 
 const MyBooking = () => {
   const { user } = useContext(AuthContext);
-  const {
-    data: myBookings = [],
-    isLoading,
-    refetch,
-  } = useQuery({
+  const { data: myBookings = [], isLoading } = useQuery({
     queryKey: ["myBookings", user?.emi],
     queryFn: async () => {
       try {
@@ -64,7 +61,13 @@ const MyBooking = () => {
                   {myBooking?.paid === true ? (
                     "Paid"
                   ) : (
-                    <button className="btn btn-success btn-sm">Pay</button>
+                    <Link
+                      to={`/dashboard/payment/${myBooking._id}`}
+                      state={{ query: myBooking }}
+                      className="btn btn-success btn-sm"
+                    >
+                      Pay
+                    </Link>
                   )}
                 </td>
               </tr>
