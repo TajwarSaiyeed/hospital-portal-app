@@ -11,7 +11,7 @@ import AllPlans from "../../components/plans/AllPlans/AllPlans";
 const Home = () => {
   return (
     <div>
-      <div className="h-[500px] md:h-screen w-full relative">
+      <div className="h-[500px] md:min-h-96 w-full relative">
         <img className="w-full object-cover h-full" src={homeImage} alt="" />
         <div className="absolute flex flex-col gap-5 p-4 md:pl-10 top-2/4 -translate-y-1/2 left-0 w-full md:w-1/2">
           <h1 className="text-2xl sm:text-4xl font-bold md:text-4xl lg:text-6xl text-[#0011AD]">
