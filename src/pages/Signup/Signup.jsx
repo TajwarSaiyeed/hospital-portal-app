@@ -10,12 +10,13 @@ import { toast } from "react-hot-toast";
 import useToken from "../../hooks/useToken";
 import Loading from "../../components/Loading/Loading";
 import SmallLoading from "../../components/SmallLoading/SmallLoading";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Signup = () => {
   const [err, setErr] = useState(null);
   const { user, loading, createUser, updateUser } = useContext(AuthContext);
   const [createdUserEmail, setCreatedUserEmail] = useState("");
-  const [role, setRole] = useState("user");
+  const [recap, setRecap] = useState();
   const [token] = useToken(createdUserEmail);
   const [smallLoading, setSmallLoading] = useState(false);
   const location = useLocation();
@@ -28,6 +29,9 @@ const Signup = () => {
 
   if (token) {
     return <Navigate to={from}></Navigate>;
+  }
+  function onChange(value) {
+    setRecap(true);
   }
 
   const handleCreateUser = (data) => {
@@ -288,8 +292,13 @@ const Signup = () => {
             </div>
           </div>
 
+          <ReCAPTCHA
+            sitekey="6LdjbYsjAAAAABDqBJE2onN8-D_VaWwJvmfZuXoP"
+            onChange={onChange}
+          />
           <div className="form-control w-full">
             <button
+              disabled={!recap}
               type="submit"
               className="btn bg-[#00B2FE] hover:bg-[#0e6c94] border-none mt-4"
             >
