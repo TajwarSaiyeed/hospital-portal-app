@@ -1,6 +1,7 @@
 import React from "react";
 import home_saas from "../../assets/home_saas.png";
 import HomeButton from "./HomeButton";
+import { BsFillCheckSquareFill } from "react-icons/bs";
 
 const HospitalSaas = () => {
   return (
@@ -25,44 +26,24 @@ const HospitalSaas = () => {
         </p>
         <div className="flex w-full gap-2 justify-around items-center">
           <div>
-            <p className="flex text-lg font-medium">
-              <input
-                type="checkbox"
-                defaultChecked
-                readOnly
-                className="checkbox checkbox-info mr-2"
-              />
+            <p className="flex items-center gap-1 text-lg font-medium">
+              <BsFillCheckSquareFill fontSize={21} />
               Fully Secure
             </p>
             <br />
-            <p className="flex text-lg font-medium">
-              <input
-                type="checkbox"
-                defaultChecked
-                readOnly
-                className="checkbox checkbox-info mr-2"
-              />
+            <p className="flex items-center gap-1 text-lg font-medium">
+              <BsFillCheckSquareFill fontSize={21} />
               Easy To Use
             </p>
           </div>
           <div>
-            <p className="flex text-lg font-medium">
-              <input
-                type="checkbox"
-                defaultChecked
-                readOnly
-                className="checkbox checkbox-info mr-2"
-              />
+            <p className="flex items-center gap-1 text-lg font-medium">
+              <BsFillCheckSquareFill fontSize={21} />
               Regular Updates
             </p>
             <br />
-            <p className="flex text-lg font-medium">
-              <input
-                type="checkbox"
-                defaultChecked
-                readOnly
-                className="checkbox checkbox-info mr-2"
-              />
+            <p className="flex items-center gap-1 text-lg font-medium">
+              <BsFillCheckSquareFill fontSize={21} />
               24*7 Support
             </p>
           </div>

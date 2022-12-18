@@ -7,8 +7,11 @@ import Subscribe from "../shared/Subscribe/Subscribe";
 const Contact = () => {
   return (
     <div>
-      <div className="min-h-96 w-full">
+      <div className="relative min-h-96 w-full">
         <img className="w-full object-cover h-full" src={contactImage} alt="" />
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+          Contact Us
+        </h1>
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">

@@ -59,7 +59,12 @@ const Login = () => {
 
   return (
     <div>
-      <img src={authImage} alt="" />
+      <div className="relative min-h-96 w-full">
+        <img className="w-full object-cover h-full" src={authImage} alt="" />
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+          Login
+        </h1>
+      </div>
       <div className="flex flex-col justify-center items-center w-full my-5">
         <div>
           <img src={logo} alt="" />

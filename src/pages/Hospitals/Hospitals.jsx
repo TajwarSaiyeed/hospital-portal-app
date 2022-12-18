@@ -27,7 +27,16 @@ const Hospitals = () => {
 
   return (
     <div>
-      <img src={hospitalImage} alt="" />
+      <div className="relative min-h-96 w-full">
+        <img
+          className="w-full object-cover h-full"
+          src={hospitalImage}
+          alt=""
+        />
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+          Hospitals
+        </h1>
+      </div>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-3xl md:text-6xl text-[#0011AD] my-3 font-bold uppercase">
           Our Hospitals

@@ -10,8 +10,11 @@ import AllPlans from "../../components/plans/AllPlans/AllPlans";
 const AboutUs = () => {
   return (
     <div>
-      <div className="min-h-96 w-full">
+      <div className="relative min-h-96 w-full">
         <img className="w-full object-cover h-full" src={aboutImage} alt="" />
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+          About Us
+        </h1>
       </div>
       <HowItWorks />
       <AboutSectionOne />
