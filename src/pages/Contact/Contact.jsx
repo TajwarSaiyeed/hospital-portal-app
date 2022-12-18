@@ -7,7 +7,7 @@ import Subscribe from "../shared/Subscribe/Subscribe";
 const Contact = () => {
   return (
     <div>
-      <div className="h-96 w-full">
+      <div className="min-h-96 w-full">
         <img className="w-full object-cover h-full" src={contactImage} alt="" />
       </div>
       <div className="flex flex-col justify-center items-center">
