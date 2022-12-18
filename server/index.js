@@ -96,6 +96,20 @@ async function run() {
       res.send(result);
     });
 
+    // get all order for specific email
+    app.get("/orders", verifyJWT, async (req, res) => {
+      const email = req.query.email;
+      const decodedEmail = req.decoded.email;
+      if (decodedEmail !== email) {
+        return res
+          .status(403)
+          .send({ error: 403, message: "Forbidden Access" });
+      }
+      const query = { email: email };
+      const result = await ordersCollection.find(query).toArray();
+      res.send(result);
+    });
+
     // jwt
     app.get("/jwt", async (req, res) => {
       const email = req.query.email;
