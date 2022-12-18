@@ -29,7 +29,7 @@ const HomeAboutService = () => {
   ];
 
   return (
-    <div className="grid grid-cols-4 p-5 h-32 my-5 bg-slate-100">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-5 md:h-32 my-5 bg-slate-100">
       {homeAboutService.map((HAS) => (
         <div key={HAS.id} className="flex items-center gap-2">
           <img src={HAS.pic} alt="" />
