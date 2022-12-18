@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import SmallLoading from "../../SmallLoading/SmallLoading";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
+import { toast } from "react-hot-toast";
 
 const ChoosePlan = ({ selectPlan, setSelectPlan, refetch }) => {
   const { user } = useContext(AuthContext);
@@ -10,8 +11,41 @@ const ChoosePlan = ({ selectPlan, setSelectPlan, refetch }) => {
     setLoading(true);
     e.preventDefault();
     const form = e.target;
-    console.log(form);
-    refetch();
+    const name = form.name.value;
+    const email = form.email.value;
+    const planName = form.planName.value;
+    const price = form.price.value;
+    const phone = form.phone.value;
+
+    const book = {
+      name,
+      email,
+      planName,
+      price,
+      phone,
+      monthlyOrYearly: selectPlan?.monthly ? "Monthly" : "Yearly",
+    };
+    fetch(`${process.env.REACT_APP_serveraddress}/orders`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `bearer ${localStorage.getItem("accessToken")}`,
+      },
+      body: JSON.stringify(book),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.acknowledged) {
+          toast.success("Booked");
+          setLoading(false);
+          setSelectPlan(null);
+          refetch();
+          form.reset();
+        } else {
+          toast.error(data.message);
+          setSelectPlan(null);
+        }
+      });
   };
 
   return (
@@ -28,7 +62,7 @@ const ChoosePlan = ({ selectPlan, setSelectPlan, refetch }) => {
           </label>
           <h3 className="text-xl font-bold">
             {selectPlan?.plan}{" "}
-            <span className="badge badge-primary    ">
+            <span className="badge badge-primary">
               {selectPlan?.monthly ? selectPlan?.monthly : selectPlan?.yearly}{" "}
               Plan
             </span>

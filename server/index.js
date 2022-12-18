@@ -37,6 +37,7 @@ async function run() {
     const hospitalCollection = client.db("hospitalDB").collection("hospitals");
     const usersCollection = client.db("hospitalDB").collection("users");
     const plansCollection = client.db("hospitalDB").collection("plans");
+    const ordersCollection = client.db("hospitalDB").collection("orders");
 
     // verify admin
     const verifyAdmin = async (req, res, next) => {
@@ -86,6 +87,13 @@ async function run() {
       } else {
         return res.status(404).send({ message: "plan not found" });
       }
+    });
+
+    // post a order
+    app.post("/orders", verifyJWT, async (req, res) => {
+      const booking = req.body;
+      const result = await ordersCollection.insertOne(booking);
+      res.send(result);
     });
 
     // jwt
