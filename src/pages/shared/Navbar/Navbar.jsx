@@ -55,11 +55,6 @@ const Navbar = () => {
       {user?.email && (
         <div className="block lg:hidden">
           <li>
-            <Link to="/profile" className="mb-2 justify-between">
-              Profile
-            </Link>
-          </li>
-          <li>
             <Link to="/dashboard" className="mb-2 justify-between">
               Dashboard
             </Link>
@@ -123,12 +118,6 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <Link to="/profile" className="mb-2 justify-between">
-                Profile
-              </Link>
-            </li>
-
             <li>
               <Link to="/dashboard" className="mb-2 justify-between">
                 Dashboard
