@@ -45,17 +45,19 @@ const GrowHospital = () => {
     },
   ];
   return (
-    <div className="relative h-[800px] md:h-[800px] lg:h-[650px] mt-5 flex justify-center">
+    <div className="relative h-[1600px] sm:h-[900px] md:h-[900px] lg:h-[650px] mt-5 flex justify-center">
       <div className="w-full gap-10 flex flex-col">
         <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
         <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       </div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
-        <h1 className="text-3xl sm:text-6xl font-bold text-[#0011AD] mb-3">
+        <h1 className="text-3xl sm:text-6xl text-center font-bold text-[#0011AD] mb-3">
           Grow Your Hospital
         </h1>
-        <p>We Help To Grow Your Hospital Beyond Your Expectation</p>
-        <div className="grid grid-cols-3 gap-5 justify-items-center">
+        <p className="text-center">
+          We Help To Grow Your Hospital Beyond Your Expectation
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
           {grhDetails.map((grhDetail) => (
             <div
               key={grhDetail.id}

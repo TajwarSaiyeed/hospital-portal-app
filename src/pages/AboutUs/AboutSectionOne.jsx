@@ -34,16 +34,16 @@ const AboutSectionOne = () => {
   ];
 
   return (
-    <div className="relative">
-      <img src={about1} alt="" />
+    <div className="relative h-[1000px] sm:h-[500px]">
+      <img className="w-full h-full object-cover" src={about1} alt="" />
       <div
         style={{
           background: "rgba(0, 178, 254, 0.5)",
         }}
         className="absolute top-0 left-0 w-full h-full"
       ></div>
-      <div className="absolute top-10 right-10 z-10">
-        <div className="grid grid-cols-2 gap-2 justify-items-center">
+      <div className="absolute top-10 md:right-10 z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-items-center">
           {aboutSectionOne.map((about) => (
             <div
               key={about.id}
@@ -53,7 +53,7 @@ const AboutSectionOne = () => {
                 <img className="w-full" src={about.image} alt="" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-[#0011AD]">
+                <h2 className="text-xl   font-bold text-[#0011AD]">
                   {about.title}
                 </h2>
                 <p className="text-lg">{about.description}</p>
