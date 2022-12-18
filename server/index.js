@@ -169,6 +169,14 @@ async function run() {
       res.send(users);
     });
 
+    // delete a user
+    app.delete("/users/:email", verifyJWT, verifyAdmin, async (req, res) => {
+      const email = req.params.email;
+      const query = { email: email };
+      const result = await usersCollection.deleteOne(query);
+      res.send(result);
+    });
+
     // add a user
     app.put("/users/:email", async (req, res) => {
       const email = req.params.email;

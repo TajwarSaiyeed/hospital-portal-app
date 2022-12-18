@@ -1,8 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
+import Loading from "../../components/Loading/Loading";
+import { toast } from "react-hot-toast";
 
 const AllUsers = () => {
-  const { data: users = [], refetch } = useQuery({
+  const {
+    data: users = [],
+    refetch,
+    isLoading,
+  } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
       try {
@@ -22,7 +28,25 @@ const AllUsers = () => {
     },
   });
 
-  console.log(users);
+  const handleDelete = (email) => {
+    fetch(`${process.env.REACT_APP_serveraddress}/users/${email}`, {
+      method: "DELETE",
+      headers: {
+        authorization: `bearer ${localStorage.getItem("accessToken")}`,
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.deletedCount > 0) {
+          toast.success("User Removed SuccessFully");
+          refetch();
+        }
+      });
+  };
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>
@@ -58,7 +82,12 @@ const AllUsers = () => {
                     <span className="badge badge-primary">{user?.role}</span>
                   </td>
                   <td>
-                    <button className="btn btn-xs btn-error">Delete</button>
+                    <button
+                      onClick={() => handleDelete(user?.email)}
+                      className="btn btn-xs btn-error"
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               ))}
