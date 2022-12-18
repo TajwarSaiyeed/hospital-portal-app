@@ -4,7 +4,6 @@ import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const ChoosePlan = ({ selectPlan, setSelectPlan, refetch }) => {
   const { user } = useContext(AuthContext);
-  console.log(selectPlan);
   const [loading, setLoading] = useState(false);
 
   const handleBook = (e) => {

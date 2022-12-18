@@ -102,7 +102,7 @@ async function run() {
       res.status(403).send({ accessToken: "" });
     });
 
-    // get all sellers for admin
+    // get all users for admin
     app.get("/users", verifyJWT, verifyAdmin, async (req, res) => {
       const query = {};
       const users = await usersCollection.find(query).toArray();

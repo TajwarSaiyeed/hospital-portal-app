@@ -76,11 +76,13 @@ const AllPlans = () => {
         </div>
       )}
 
-      <ChoosePlan
-        refetch={refetch}
-        setSelectPlan={setSelectPlan}
-        selectPlan={selectPlan}
-      />
+      {selectPlan && (
+        <ChoosePlan
+          refetch={refetch}
+          setSelectPlan={setSelectPlan}
+          selectPlan={selectPlan}
+        />
+      )}
     </div>
   );
 };
