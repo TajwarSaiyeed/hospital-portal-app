@@ -52,6 +52,25 @@ const Navbar = () => {
           </Link>
         </li>
       )}
+      {user?.email && (
+        <div className="block lg:hidden">
+          <li>
+            <Link to="/profile" className="mb-2 justify-between">
+              Profile
+            </Link>
+          </li>
+          <li>
+            <Link to="/dashboard" className="mb-2 justify-between">
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <button onClick={signout} className="btn btn-error">
+              Logout
+            </button>
+          </li>
+        </div>
+      )}
     </>
   );
 
@@ -111,7 +130,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/profile" className="mb-2 justify-between">
+              <Link to="/dashboard" className="mb-2 justify-between">
                 Dashboard
               </Link>
             </li>
@@ -124,7 +143,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      {/* {isAdmin && (
+      {(isAdmin || user) && (
         <div className="navbar-end lg:hidden">
           <label
             htmlFor="dashboard-drawer"
@@ -147,7 +166,7 @@ const Navbar = () => {
             </svg>
           </label>
         </div>
-      )} */}
+      )}
     </div>
   );
 };

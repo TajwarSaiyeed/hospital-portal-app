@@ -10,6 +10,11 @@ import Contact from "../pages/Contact/Contact";
 import Pricing from "../pages/Pricing/Pricing";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
+import MyBooking from "../pages/Dashboard/MyBooking";
+import AddHospital from "../pages/Dashboard/AddHospital";
+import AddDoctor from "../pages/Dashboard/AddDoctor";
+import AllUsers from "../pages/Dashboard/AllUsers";
 
 export const routes = createBrowserRouter([
   {
@@ -55,6 +60,36 @@ export const routes = createBrowserRouter([
             <Dashboard />
           </PrivateRoute>
         ),
+        children: [
+          {
+            path: "/dashboard",
+            element: <MyBooking />,
+          },
+          {
+            path: "/dashboard/addhospital",
+            element: (
+              <AdminRoute>
+                <AddHospital />
+              </AdminRoute>
+            ),
+          },
+          {
+            path: "/dashboard/adddoctor",
+            element: (
+              <AdminRoute>
+                <AddDoctor />
+              </AdminRoute>
+            ),
+          },
+          {
+            path: "/dashboard/allusers",
+            element: (
+              <AdminRoute>
+                <AllUsers />
+              </AdminRoute>
+            ),
+          },
+        ],
       },
     ],
   },
