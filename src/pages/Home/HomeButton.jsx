@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 const HomeButton = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className="flex gap-6">
-      <button className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white ">
-        Signup
-      </button>
-      <button className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white ">
+      {!user?.email && (
+        <Link
+          to="/signup"
+          className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white "
+        >
+          Signup
+        </Link>
+      )}
+      <Link
+        to="/contact"
+        className="btn btn-wide rounded-full bg-white hover:bg-slate-200 border-none shadow-md text-black shadow-white "
+      >
         Contact Us
-      </button>
+      </Link>
     </div>
   );
 };

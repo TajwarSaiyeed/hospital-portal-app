@@ -37,8 +37,21 @@ async function run() {
     const hospitalCollection = client.db("hospitalDB").collection("hospitals");
     const usersCollection = client.db("hospitalDB").collection("users");
 
+    // verify admin
+    const verifyAdmin = async (req, res, next) => {
+      const decodedEmail = req.decoded.email;
+      const query = { email: decodedEmail };
+      const user = await usersCollection.findOne(query);
+      if (user?.role !== "admin") {
+        return res
+          .status(403)
+          .send({ error: 403, message: "forbidden access" });
+      }
+      next();
+    };
+
     // get all hospitals
-    app.get("/hospitals", verifyJWT, async (req, res) => {
+    app.get("/hospitals", async (req, res) => {
       const page = req.query.page;
       const mylimit = req.query.limit;
       const query = {};
@@ -65,6 +78,14 @@ async function run() {
       res.status(403).send({ accessToken: "" });
     });
 
+    // get all sellers for admin
+    app.get("/users", verifyJWT, verifyAdmin, async (req, res) => {
+      const query = {};
+      const users = await usersCollection.find(query).toArray();
+      res.send(users);
+    });
+
+    // add a user
     app.put("/users/:email", async (req, res) => {
       const email = req.params.email;
       const user = req.body;
