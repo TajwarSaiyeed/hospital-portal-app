@@ -59,7 +59,9 @@ const MyBooking = () => {
                 </td>
                 <td>
                   {myBooking?.paid === true ? (
-                    "Paid"
+                    <span className="text-green-500 font-bold uppercase text-center">
+                      Paid
+                    </span>
                   ) : (
                     <Link
                       to={`/dashboard/payment/${myBooking._id}`}

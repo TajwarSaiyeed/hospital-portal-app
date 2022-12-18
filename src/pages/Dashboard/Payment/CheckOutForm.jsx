@@ -1,5 +1,6 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 const CheckOutForm = ({ plan }) => {
   const stripe = useStripe();
@@ -133,6 +134,7 @@ const CheckOutForm = ({ plan }) => {
           <p className="font-bold text-primary text-xl">
             Your TransactionId : {transactionId}
           </p>
+          <Navigate to="/dashboard" />
         </>
       )}
     </form>
