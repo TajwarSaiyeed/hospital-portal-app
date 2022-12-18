@@ -65,6 +65,13 @@ async function run() {
       res.send({ count, hospitals });
     });
 
+    // add a hospital
+    app.post("/hospitals", verifyJWT, verifyAdmin, async (req, res) => {
+      const hospital = req.body;
+      const result = await hospitalCollection.insertOne(hospital);
+      res.send(result);
+    });
+
     // get all plans
     app.get("/plans", async (req, res) => {
       const plan = req.query.plan;
