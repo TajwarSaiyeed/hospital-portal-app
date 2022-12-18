@@ -1,18 +1,24 @@
 import { useQuery } from "@tanstack/react-query";
 import React, { useState } from "react";
 import AllPlanCard from "./AllPlanCard";
+import ChoosePlan from "./ChoosePlan";
 import Loading from "../../Loading/Loading";
 
 const AllPlans = () => {
   const [active, setActive] = useState("Monthly");
   const [loading, setLoading] = useState(false);
+  const [selectPlan, setSelectPlan] = useState(null);
 
   const handleActive = (e) => {
     setLoading(true);
     setActive(e.target.innerText);
   };
 
-  const { data: plans = [] } = useQuery({
+  const {
+    data: plans = [],
+    refetch,
+    isLoading,
+  } = useQuery({
     queryKey: ["plans", active],
     queryFn: async () => {
       try {
@@ -27,6 +33,10 @@ const AllPlans = () => {
       }
     },
   });
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div className="flex mt-5 mb-10 flex-col justify-center items-center">
@@ -54,10 +64,23 @@ const AllPlans = () => {
       ) : (
         <div className="grid grid-cols-3 gap-3 justify-items-center">
           {plans?.map((plan) => {
-            return <AllPlanCard key={plan?._id} plan={plan} active={active} />;
+            return (
+              <AllPlanCard
+                setSelectPlan={setSelectPlan}
+                key={plan?._id}
+                plan={plan}
+                active={active}
+              />
+            );
           })}
         </div>
       )}
+
+      <ChoosePlan
+        refetch={refetch}
+        setSelectPlan={setSelectPlan}
+        selectPlan={selectPlan}
+      />
     </div>
   );
 };
