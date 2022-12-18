@@ -31,7 +31,7 @@ const Contact = () => {
     <div>
       <div className="relative min-h-96 w-full">
         <img className="w-full object-cover h-full" src={contactImage} alt="" />
-        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white text-2xl sm:text-4xl md:text-8xl font-black">
           Contact Us
         </h1>
       </div>
@@ -40,7 +40,7 @@ const Contact = () => {
           <h1 className="text-3xl md:text-6xl text-[#0011AD] my-3 font-bold uppercase">
             Contact Us
           </h1>
-          <p className="font-semibold text-xl">
+          <p className="font-semibold text-xl text-center px-5">
             Get in touch and let us know how we can help. Fill out the form and
             we’ll be in touch as soon as possible.
           </p>

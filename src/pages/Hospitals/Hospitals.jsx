@@ -33,7 +33,7 @@ const Hospitals = () => {
           src={hospitalImage}
           alt=""
         />
-        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white md:text-8xl font-black">
+        <h1 className="absolute tracking-widest top-1/4 right-5 uppercase text-white text-4xl md:text-8xl font-black">
           Hospitals
         </h1>
       </div>
