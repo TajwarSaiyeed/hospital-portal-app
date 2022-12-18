@@ -15,6 +15,7 @@ const Signup = () => {
   const [err, setErr] = useState(null);
   const { user, loading, createUser, updateUser } = useContext(AuthContext);
   const [createdUserEmail, setCreatedUserEmail] = useState("");
+  const [role, setRole] = useState("user");
   const [token] = useToken(createdUserEmail);
   const [smallLoading, setSmallLoading] = useState(false);
   const location = useLocation();
@@ -32,44 +33,57 @@ const Signup = () => {
   const handleCreateUser = (data) => {
     setSmallLoading(true);
     setErr(null);
-    const { name, email, password, cpassword, phone } = data;
+    const { name, email, password, cpassword, phone, image, role } = data;
 
     if (password !== cpassword) {
       setErr("Password and Confirm Password must be same");
-      setSmallLoading(false);
       return;
     }
-    const userObj = {
-      displayName: name,
-    };
-    createUser(email, password)
-      .then((res) => {
-        console.log(res.user);
-        updateUser(userObj)
-          .then(() => {
+    const userImage = image[0];
+    const formData = new FormData();
+    formData.append("image", userImage);
+
+    const url = `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMGBB_KEY}`;
+
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((imgData) => {
+        const userObj = {
+          displayName: name,
+          photoURL: imgData.data.display_url,
+        };
+        createUser(email, password)
+          .then((res) => {
+            console.log(res.user);
+            updateUser(userObj)
+              .then(() => {
+                setErr(null);
+                saveUser(name, email, phone, role, imgData.data.display_url);
+                toast.success("SignUp Successfull");
+                setSmallLoading(false);
+              })
+              .catch((err) => {
+                const error = err.message.split("/")[1].split(").")[0];
+                setErr(error);
+                setSmallLoading(false);
+              });
             setErr(null);
-            saveUser(name, email, phone);
-            toast.success("SignUp Successfull");
-            setSmallLoading(false);
           })
           .catch((err) => {
             const error = err.message.split("/")[1].split(").")[0];
             setErr(error);
             setSmallLoading(false);
           });
-        setErr(null);
-      })
-      .catch((err) => {
-        const error = err.message.split("/")[1].split(").")[0];
-        setErr(error);
-        setSmallLoading(false);
       });
   };
 
   // save user to database
 
-  const saveUser = (name, email, phone) => {
-    const user = { name, email, phone };
+  const saveUser = (name, email, phone, role, image) => {
+    const user = { name, email, phone, role, image };
     fetch(`${process.env.REACT_APP_serveraddress}/users/${email}`, {
       method: "PUT",
       headers: {
@@ -111,7 +125,7 @@ const Signup = () => {
         </div>
         <form
           onSubmit={handleSubmit(handleCreateUser)}
-          className="w-3/4 md:w-1/2 flex flex-col items-center justify-center"
+          className="w-3/4 md:w-1/2 flex flex-col gap-4 items-center justify-center"
         >
           <div className="form-control w-full">
             <label className="label">
@@ -121,7 +135,7 @@ const Signup = () => {
               type="text"
               {...register("name", { required: "Required" })}
               className="input input-bordered"
-              placeholder=""
+              placeholder="Enter Your Name"
             />
             {errors.name && (
               <label className="label">
@@ -131,9 +145,22 @@ const Signup = () => {
               </label>
             )}
           </div>
+          <div className="form-control w-full ">
+            <label className="label">
+              <span className="label-text font-bold">Select Your Image</span>
+            </label>
+            <input
+              required
+              type="file"
+              name="image"
+              accept="image/*"
+              {...register("image")}
+              className="file-input file-input-bordered w-full "
+            />
+          </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text font-bold">Email</span>
             </label>
             <input
               type="email"
@@ -151,7 +178,7 @@ const Signup = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Phone Number</span>
+              <span className="label-text font-bold">Phone Number</span>
             </label>
             <input
               type="number"
@@ -167,9 +194,10 @@ const Signup = () => {
               </label>
             )}
           </div>
+
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text font-bold">Password</span>
             </label>
             <input
               type="password"
@@ -193,7 +221,7 @@ const Signup = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Confirm Password</span>
+              <span className="label-text font-bold">Confirm Password</span>
             </label>
             <input
               type="password"
@@ -215,6 +243,46 @@ const Signup = () => {
               </label>
             )}
           </div>
+          <div className="flex gap-2">
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  {...register("role")}
+                  type="radio"
+                  value="PATIENT"
+                  name="role"
+                  className="radio checked:bg-red-500"
+                  defaultChecked
+                />
+                <span className="label-text">PATIENT</span>
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  {...register("role")}
+                  type="radio"
+                  value="NURSE"
+                  name="role"
+                  className="radio checked:bg-blue-500"
+                />
+                <span className="label-text">NURSE</span>
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  {...register("role")}
+                  type="radio"
+                  value="RECEPTIONIST"
+                  name="role"
+                  className="radio checked:bg-green-500"
+                />{" "}
+                <span className="label-text">RECEPTIONIST</span>
+              </label>
+            </div>
+          </div>
+
           <div className="form-control w-full">
             <button
               type="submit"

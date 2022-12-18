@@ -44,7 +44,7 @@ const AllUsers = () => {
                       <div className="avatar">
                         <div className="mask mask-squircle w-12 h-12">
                           <img
-                            src={user?.avatar || "https://i.pravatar.cc/300"}
+                            src={user?.image || "https://i.pravatar.cc/300"}
                             alt="Avatar Tailwind CSS Component"
                           />
                         </div>
