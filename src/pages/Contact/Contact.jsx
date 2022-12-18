@@ -3,8 +3,30 @@ import contactImage from "../../assets/contact.png";
 import { FaLocationArrow, FaPhone } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import Subscribe from "../shared/Subscribe/Subscribe";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_96448m9",
+        "template_vc4t3f5",
+        e.target,
+        "EspSgA_wk_m90bO5i"
+      )
+      .then(
+        () => {
+          toast.success("Message Sent, We will get back to you shortly");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div className="relative min-h-96 w-full">
@@ -25,7 +47,10 @@ const Contact = () => {
         </div>
         <div className="bg-[#27b9be] w-full flex flex-col-reverse md:flex-row justify-between items-center rounded-lg my-5">
           <div className="p-5 w-full md:w-1/2">
-            <form className="w-full flex flex-col items-center justify-center">
+            <form
+              onSubmit={sendEmail}
+              className="w-full flex flex-col items-center justify-center"
+            >
               <div className="form-control w-full">
                 <label className="label">
                   <span className="text-md text-white font-semibold">
@@ -34,6 +59,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
+                  name="first_name"
                   placeholder="Enter Your First Name"
                   className="input input-bordered w-full "
                 />
@@ -46,6 +72,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
+                  name="last_name"
                   placeholder="Enter Your Last Name"
                   className="input input-bordered w-full "
                 />
@@ -58,7 +85,9 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  data-temp-mail-org
                   required
+                  name="user_email"
                   placeholder="Enter your email"
                   className="input input-bordered w-full "
                 />
@@ -71,7 +100,8 @@ const Contact = () => {
                 </label>
                 <input
                   type="number"
-                  placeholder="Enter your password"
+                  name="user_phone"
+                  placeholder="Enter your phone number"
                   className="input input-bordered w-full "
                 />
               </div>
@@ -82,6 +112,7 @@ const Contact = () => {
                   </span>
                 </label>
                 <textarea
+                  name="message"
                   className="textarea textarea-bordered h-24 w-full"
                   placeholder="Enter Your Message..."
                 ></textarea>
