@@ -6,6 +6,7 @@ import homeImage from "../../assets/home.png";
 import ProtectYoutHealth from "./ProtectYoutHealth";
 import HospitalSaas from "./HospitalSaas";
 import HomeButton from "./HomeButton";
+import AllPlans from "../../components/plans/AllPlans/AllPlans";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <HospitalSaas />
       <GrowHospital />
       <HomeAboutService />
+      <AllPlans />
       <Subscribe />
     </div>
   );

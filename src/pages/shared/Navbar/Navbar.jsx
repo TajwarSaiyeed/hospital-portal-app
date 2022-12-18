@@ -21,8 +21,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className="text-sm font-semibold" to="/pricing">
-          Pricing
+        <Link className="text-sm font-semibold" to="/aboutus">
+          About
         </Link>
       </li>
       <li>
@@ -31,8 +31,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className="text-sm font-semibold" to="/hospitals">
-          Hospitals
+        <Link className="text-sm font-semibold" to="/pricing">
+          Pricing
         </Link>
       </li>
       <li>
@@ -41,8 +41,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className="text-sm font-semibold" to="/aboutus">
-          About
+        <Link className="text-sm font-semibold" to="/hospitals">
+          Hospitals
         </Link>
       </li>
       {!user?.email && (

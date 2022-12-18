@@ -1,0 +1,252 @@
+[
+    {
+        "plan": "Standard",
+        "price": 10,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Premium",
+        "price": 49,
+        "monthly": "Monthly",
+        "features": [
+            "Blood Banks",
+            "Live Consultations",
+            "Vaccinations",
+            "Reports",
+            "Appointments",
+            "Documents",
+            "Inventory",
+            "SMS/Mail",
+            "Radiology",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Professional",
+        "price": 99,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Inventory",
+            "Vaccinations",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "kingshuk",
+        "price": 100,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Mari Guy",
+        "price": 435,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Reports"
+        ]
+    },
+    {
+        "plan": "Doctors",
+        "price": 30,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Live Consultations",
+            "Vaccinations",
+            "SMS/Mail",
+            "100 SMS",
+            "Blood Banks",
+            "Inventory",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "rar",
+        "price": 139,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Inventory",
+            "SMS/Mail",
+            "500 SMS",
+            "Reports",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Vaccinations",
+            "Radiology",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Basic",
+        "price": 20,
+        "monthly": "Monthly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Inventory",
+            "Vaccinations"
+        ]
+    },
+    {
+        "plan": "Standard",
+        "price": 89,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Premium",
+        "price": 149,
+        "yearly": "Yearly",
+        "features": [
+            "Blood Banks",
+            "Live Consultations",
+            "Vaccinations",
+            "Reports",
+            "Appointments",
+            "Documents",
+            "Inventory",
+            "SMS/Mail",
+            "Radiology",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Professional",
+        "price": 299,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Inventory",
+            "Vaccinations",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "kingshuk",
+        "price": 499,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Mari Guy",
+        "price": 835,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Live Consultations",
+            "Inventory",
+            "Vaccinations",
+            "SMS/Mail",
+            "Reports"
+        ]
+    },
+    {
+        "plan": "Doctors",
+        "price": 99,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Live Consultations",
+            "Vaccinations",
+            "SMS/Mail",
+            "100 SMS",
+            "Blood Banks",
+            "Inventory",
+            "Radiology",
+            "Reports",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Rar",
+        "price": 349,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Inventory",
+            "SMS/Mail",
+            "500 SMS",
+            "Reports",
+            "Blood Banks",
+            "Documents",
+            "Live Consultations",
+            "Vaccinations",
+            "Radiology",
+            "Pathology"
+        ]
+    },
+    {
+        "plan": "Basic",
+        "price": 69,
+        "yearly": "Yearly",
+        "features": [
+            "Appointments",
+            "Documents",
+            "Inventory",
+            "Vaccinations"
+        ]
+    }
+]

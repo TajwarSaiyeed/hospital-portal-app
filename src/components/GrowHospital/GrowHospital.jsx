@@ -45,7 +45,7 @@ const GrowHospital = () => {
     },
   ];
   return (
-    <div className="relative h-[800px] md:h-[800px] lg:min-h-[500px] mt-5 flex justify-center">
+    <div className="relative h-[800px] md:h-[800px] lg:h-[650px] mt-5 flex justify-center">
       <div className="w-full gap-10 flex flex-col">
         <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
         <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>

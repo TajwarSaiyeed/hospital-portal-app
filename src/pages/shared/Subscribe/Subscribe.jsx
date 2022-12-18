@@ -2,8 +2,8 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <div className="flex justify-center items-center flex-col">
-      <h1 className="font-bold text-[#0e6c94] text-xl md:text-3xl">
+    <div className="flex my-5 justify-center items-center flex-col">
+      <h1 className="font-bold text-[#0011AD] text-xl md:text-6xl mb-5">
         Subscribe Our Newsletter
       </h1>
       <div className="my-3 w-3/4 flex justify-center p-1 rounded-full bg-[#5eabcc] items-center gap-2">

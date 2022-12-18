@@ -36,6 +36,7 @@ async function run() {
   try {
     const hospitalCollection = client.db("hospitalDB").collection("hospitals");
     const usersCollection = client.db("hospitalDB").collection("users");
+    const plansCollection = client.db("hospitalDB").collection("plans");
 
     // verify admin
     const verifyAdmin = async (req, res, next) => {
@@ -62,6 +63,22 @@ async function run() {
         .toArray();
       const count = await hospitalCollection.countDocuments(query);
       res.send({ count, hospitals });
+    });
+
+    // get all plans
+    app.get("/plans", async (req, res) => {
+      const plan = req.query.plan;
+      const query = {};
+      const plans = await plansCollection.find(query).toArray();
+      const monthly = plans.filter((ursplan) => ursplan.monthly === plan);
+      const yearly = plans.filter((ursplan) => ursplan.yearly === plan);
+      if (monthly.length > 0) {
+        return res.status(200).send(monthly);
+      } else if (yearly.length > 0) {
+        return res.status(200).send(yearly);
+      } else {
+        return res.status(404).send({ message: "plan not found" });
+      }
     });
 
     // jwt
