@@ -61,7 +61,6 @@ const Signup = () => {
         };
         createUser(email, password)
           .then((res) => {
-            console.log(res.user);
             updateUser(userObj)
               .then(() => {
                 setErr(null);
