@@ -15,6 +15,8 @@ import MyBooking from "../pages/Dashboard/MyBooking";
 import AddHospital from "../pages/Dashboard/AddHospital";
 import AllUsers from "../pages/Dashboard/AllUsers";
 import Payment from "../pages/Dashboard/Payment/Payment";
+import AddDoctor from "../pages/Dashboard/AddDoctor";
+import AllDoctors from "../pages/Dashboard/AllDoctors";
 
 export const routes = createBrowserRouter([
   {
@@ -74,6 +76,22 @@ export const routes = createBrowserRouter([
             element: (
               <AdminRoute>
                 <AddHospital />
+              </AdminRoute>
+            ),
+          },
+          {
+            path: "/dashboard/adddoctor",
+            element: (
+              <AdminRoute>
+                <AddDoctor />
+              </AdminRoute>
+            ),
+          },
+          {
+            path: "/dashboard/alldoctors",
+            element: (
+              <AdminRoute>
+                <AllDoctors />
               </AdminRoute>
             ),
           },

@@ -40,6 +40,7 @@ async function run() {
     const plansCollection = client.db("hospitalDB").collection("plans");
     const ordersCollection = client.db("hospitalDB").collection("orders");
     const paymentsCollection = client.db("hospitalDB").collection("payments");
+    const doctorsCollection = client.db("hospitalDB").collection("doctors");
 
     // verify admin
     const verifyAdmin = async (req, res, next) => {
@@ -87,6 +88,27 @@ async function run() {
         updatedOrderDoc,
         { upsert: true }
       );
+      res.send(result);
+    });
+
+    // add a doctor
+    app.post("/doctors", verifyJWT, verifyAdmin, async (req, res) => {
+      const doctor = req.body;
+      const result = await doctorsCollection.insertOne(doctor);
+      res.send(result);
+    });
+
+    // get all doctors
+    app.get("/doctors", verifyJWT, verifyAdmin, async (req, res) => {
+      const doctors = await doctorsCollection.find({}).toArray();
+      res.send(doctors);
+    });
+
+    // delete a doctor
+    app.delete("/doctors/:id", verifyJWT, verifyAdmin, async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await doctorsCollection.deleteOne(query);
       res.send(result);
     });
 
