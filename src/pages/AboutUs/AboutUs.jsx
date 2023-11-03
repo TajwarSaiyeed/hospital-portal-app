@@ -1,11 +1,9 @@
 import React from "react";
 import aboutImage from "../../assets/about.png";
 import HowItWorks from "./HowItWorks";
-import Subscribe from "../shared/Subscribe/Subscribe";
 import AboutSectionOne from "./AboutSectionOne";
 import AboutSectionThree from "./AboutSectionThree";
 import HomeAboutService from "../../components/HomeAboutService/HomeAboutService";
-import AllPlans from "../../components/plans/AllPlans/AllPlans";
 
 const AboutUs = () => {
   return (
@@ -20,8 +18,7 @@ const AboutUs = () => {
       <AboutSectionOne />
       <HomeAboutService />
       <AboutSectionThree />
-      <AllPlans />
-      <Subscribe />
+      <div className="my-8" />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const HospitalSaas = () => {
         className="w-full h-full absolute"
       ></div>
       <div className="w-full lg:w-1/2 absolute top-0 right-0 h-full flex justify-center items-center flex-col p-5 gap-2">
-        <h1 className="text-2xl sm:text-4xl text-[#0011AD] font-bold">
+        <h1 className="text-2xl sm:text-4xl text-[#ff67a6] font-bold">
           Why Hospital SAAS?
         </h1>
         <p className="text-[18px] md:text-3xl lg:text-[18px] md:text-center lg:text-justify font-medium text-justify">

@@ -28,7 +28,7 @@ const ProtectYoutHealth = () => {
     <div className="relative h-[1000px] sm:h-[700px] md:h-[800px] lg:h-[500px] mt-5 flex justify-center">
       <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
-        <h1 className="text-3xl text-center sm:text-6xl font-bold text-[#0011AD] mb-3">
+        <h1 className="text-3xl text-center sm:text-6xl font-bold text-[#ff67a6] mb-3">
           Protect Your Health
         </h1>
         <p className="text-center">
@@ -39,7 +39,7 @@ const ProtectYoutHealth = () => {
           {grhDetails.map((grhDetail) => (
             <div
               key={grhDetail.id}
-              className="text-center gap-4 h-52 min-w-40 w-full flex flex-col md:w-72 lg:w-80 bg-[#0011AD] shadow-lg text-white p-4 rounded-2xl"
+              className="text-center gap-4 h-52 min-w-40 w-full flex flex-col md:w-72 lg:w-80 bg-[#ff67a6] shadow-lg text-white p-4 rounded-2xl"
             >
               <h2 className="text-2xl font-bold text-white">
                 {grhDetail.title}

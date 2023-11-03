@@ -1,16 +1,16 @@
 import React from "react";
-import logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer flex md:flex-row flex-col p-10 bg-[#0011AD] text-white">
+    <footer className="footer flex md:flex-row flex-col p-10 bg-[#ff67a6] text-white">
       <div className="w-full md:w-1/2">
-        <img src={logo} alt="" />
+        <img src={"/icon.png"} className="w-28 h-28 object-cover" alt="" />
         <p className="text-xl">
-          Over past 10+ years of experience <br /> and skills in various
-          technologies, we built great scalable products. Whatever technology we
-          worked with, we just not build products for our clients but we a
+          Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
+          Aliquam reiciendis, quidem dolor ea corrupti ex, libero animi
+          repudiandae consectetur vel error impedit cum accusantium eligendi
+          cumque cupiditate minus. Asperiores, ipsum.
         </p>
       </div>
       <div className="w-full md:w-1/2 flex flex-col gap-5 md:flex-row md:justify-between">
@@ -36,8 +36,8 @@ const Footer = () => {
         <div>
           <span className="footer-title text-xl">Get in Touch</span>
           <p className="text-lg">
-            423B, Road Wordwide Country, USA <br /> admin@hms.com <br />{" "}
-            +912345678900
+            123D, Road Wordwide Country, test Country <br /> test@hms.com <br />{" "}
+            +1234567890
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Hospital = ({ hospital }) => {
   return (
     <div
       className={`${
-        hospital_org_id % 2 === 0 ? "bg-teal-500" : "bg-blue-500"
+        hospital_org_id % 2 === 0 ? "bg-yellow-500" : "bg-rose-500"
       } w-full md:w-80 p-3 rounded-lg`}
     >
       <h1 className="text-xl font-bold">{name}</h1>

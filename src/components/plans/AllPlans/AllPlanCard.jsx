@@ -25,13 +25,13 @@ const AllPlanCard = ({ plan, active, setSelectPlan }) => {
         ))}
       </ul>
       {!user?.email ? (
-        <Link to="/login" className="btn btn-wide btn-primary">
+        <Link to="/login" className="btn btn-wide btn-info">
           Please Login
         </Link>
       ) : (
         <label
           htmlFor="addToCart"
-          className="btn btn-wide btn-primary"
+          className="btn btn-wide btn-secondary"
           onClick={() => setSelectPlan(plan)}
         >
           Choose Plan

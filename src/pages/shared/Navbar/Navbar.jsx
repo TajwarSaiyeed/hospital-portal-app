@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logo.png";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 import useAdmin from "../../../hooks/useAdmin";
 
@@ -99,7 +98,7 @@ const Navbar = () => {
         <Link to="/" className={`flex btn btn-ghost gap-3 normal-case text-xl`}>
           <div className="avatar">
             <div className="w-10 rounded-full">
-              <img src={logo} alt="" />
+              <img src="/icon.png" alt="" />
             </div>
           </div>
         </Link>

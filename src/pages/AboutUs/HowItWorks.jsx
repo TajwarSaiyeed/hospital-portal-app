@@ -26,14 +26,14 @@ const HowItWorks = () => {
     <div className="relative h-[960px] sm:h-[800px] md:h-[800px] lg:h-[500px] mt-5 flex justify-center">
       <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       <div className="absolute top-14 mx-auto gap-10 flex justify-center items-center flex-col">
-        <h1 className="text-3xl sm:text-6xl font-bold text-[#0011AD] mb-3">
+        <h1 className="text-3xl sm:text-6xl font-bold text-[#ff67a6] mb-3">
           How It Work
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center">
           {howtoworks.map((howtowork) => (
             <div
               key={howtowork.id}
-              className="text-center min-w-40 w-full md:w-72 lg:w-80 text-white flex justify-center items-center flex-col bg-[#0011AD] p-4 rounded-2xl"
+              className="text-center min-w-40 w-full md:w-72 lg:w-80 text-white flex justify-center items-center flex-col bg-[#ff67a6] p-4 rounded-2xl"
             >
               <h1 className="text-6xl font-bold">{howtowork.id}</h1>
               <h2 className="text-4xl">{howtowork.title}</h2>

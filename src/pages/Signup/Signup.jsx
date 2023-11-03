@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { Link, Navigate, useLocation } from "react-router-dom";
 import Subscribe from "../shared/Subscribe/Subscribe";
 import authImage from "../../assets/auth.png";
-import logo from "../../assets/logo.png";
 import { FcInfo } from "react-icons/fc";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
@@ -126,7 +125,7 @@ const Signup = () => {
       </div>
       <div className="flex flex-col justify-center items-center w-full my-5">
         <div className="flex justify-center items-center flex-col">
-          <img src={logo} alt="" />
+          <img src={"/icon.png"} className="object-cover w-24 h-24" alt="" />
           <h1 className="text-3xl font-bold text-[#00B2FE] uppercase">
             Sign Up
           </h1>

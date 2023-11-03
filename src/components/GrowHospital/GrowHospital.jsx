@@ -51,7 +51,7 @@ const GrowHospital = () => {
         <div className="bg-[#F5F5F5] w-full rounded-[50px] h-[300px] lg:h-64 shadow-md"></div>
       </div>
       <div className="absolute top-10 mx-auto gap-5 flex justify-center items-center flex-col">
-        <h1 className="text-3xl sm:text-6xl text-center font-bold text-[#0011AD] mb-3">
+        <h1 className="text-3xl sm:text-6xl text-center font-bold text-[#ff67a6] mb-3">
           Grow Your Hospital
         </h1>
         <p className="text-center">
@@ -61,7 +61,7 @@ const GrowHospital = () => {
           {grhDetails.map((grhDetail) => (
             <div
               key={grhDetail.id}
-              className="gap-4 h-52 min-w-40 w-full flex flex-col md:w-72 lg:w-80 bg-[#0011AD] shadow-lg text-white p-4 rounded-2xl"
+              className="gap-4 h-52 min-w-40 w-full flex flex-col md:w-72 lg:w-80 bg-[#ff67a6] shadow-lg text-white p-4 rounded-2xl"
             >
               <img className="w-10 h-12" src={grhDetail.image} alt="" />
               <div>

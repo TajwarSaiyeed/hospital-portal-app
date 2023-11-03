@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import authImage from "../../assets/auth.png";
-import logo from "../../assets/logo.png";
 import { Link, Navigate, useLocation } from "react-router-dom";
 import useToken from "../../hooks/useToken";
 import { useForm } from "react-hook-form";
@@ -67,7 +66,7 @@ const Login = () => {
       </div>
       <div className="flex flex-col justify-center items-center w-full my-5">
         <div>
-          <img src={logo} alt="" />
+          <img src={"/icon.png"} className="object-cover w-24 h-24" alt="" />
           <h1 className="text-3xl font-bold text-[#00B2FE] uppercase">Login</h1>
         </div>
         <form

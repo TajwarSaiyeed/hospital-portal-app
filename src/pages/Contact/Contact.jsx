@@ -135,7 +135,7 @@ const Contact = () => {
               <dir>
                 <h1 className="text-xl md:text-3xl font-semibold">Address</h1>
                 <p className="text-lg font-medium">
-                  423B, Road Wordwide Country, USA
+                  123D, Road Wordwide Country, test Country
                 </p>
               </dir>
             </div>
@@ -145,7 +145,7 @@ const Contact = () => {
               </div>
               <dir>
                 <h1 className="text-xl md:text-3xl font-semibold">Email</h1>
-                <p className="text-lg font-medium">admin@hms.com</p>
+                <p className="text-lg font-medium">test@hms.com</p>
               </dir>
             </div>
             <div className="flex justify-start items-center">
@@ -154,7 +154,7 @@ const Contact = () => {
               </div>
               <dir>
                 <h1 className="text-xl md:text-3xl font-semibold">Phone</h1>
-                <p className="text-lg font-medium">+912345678900</p>
+                <p className="text-lg font-medium">+1234567890</p>
               </dir>
             </div>
           </div>

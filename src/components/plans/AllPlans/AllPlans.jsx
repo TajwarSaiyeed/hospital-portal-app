@@ -41,7 +41,7 @@ const AllPlans = () => {
   return (
     <div className="flex mt-5 mb-10 flex-col justify-center items-center">
       <div className="flex justify-center items-center flex-col gap-2">
-        <h1 className="md:text-6xl font-bold text-[#0011AD]">
+        <h1 className="md:text-6xl font-bold text-[#ff67a6]">
           Choose Your Pricing Plan
         </h1>
         <div className="tabs tabs-boxed">

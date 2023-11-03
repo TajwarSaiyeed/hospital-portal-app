@@ -38,7 +38,7 @@ const Hospitals = () => {
         </h1>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl md:text-6xl text-[#0011AD] my-3 font-bold uppercase">
+        <h1 className="text-3xl md:text-6xl text-[#ff67a6] my-3 font-bold uppercase">
           Our Hospitals
         </h1>
         {loading ? (

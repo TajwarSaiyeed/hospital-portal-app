@@ -53,7 +53,7 @@ const AboutSectionOne = () => {
                 <img className="w-full" src={about.image} alt="" />
               </div>
               <div>
-                <h2 className="text-xl   font-bold text-[#0011AD]">
+                <h2 className="text-xl   font-bold text-[#ff67a6]">
                   {about.title}
                 </h2>
                 <p className="text-lg">{about.description}</p>
